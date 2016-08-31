@@ -1,0 +1,544 @@
+/* Main layout styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.container {
+  width: 989px;
+  margin: auto;
+}
+
+
+/* ---------------  --------------- Header ---------------  --------------- */
+
+.page-header {
+  height: 120px;
+}
+
+.page-header__column {
+  float: left;
+}
+
+.page-header__column--logo {
+  margin-right: 54px;
+}
+
+.page-header__column--logo a {
+  display: block;
+  width: 150px;
+  height: 120px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 23px;
+  color: transparent;
+}
+
+.page-header__column--menu {
+  position: relative;
+  width: 530px;
+}
+
+.page-header__column--menu-link,
+.page-header__column--submenu-link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -2px;
+}
+
+.page-header__column--menu-link a {
+  position: relative;
+  display: block;
+  height: 117px;
+  padding-left: 15px;
+  padding-right: 14px;
+  font-size: 16px;
+  line-height: 126px;
+  color: #000000;
+}
+
+.page-header__column--menu-link a:hover,
+a.page-header__column--menu-active {
+  color: #018f3c;
+}
+
+.page-header__column--menu-active {
+  border-bottom: 3px solid #018f3c;
+}
+
+.page-header__column--menu-active::after {
+  position: absolute;
+  top: 99px;
+  left: 39px;
+  display: block;
+  content: '';
+  border: 10px solid transparent;
+  border-bottom-color: #018f3c;
+}
+
+.page-header__column--submenu {
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: 100%; 
+  height: 60px;
+  background-color: #efece7;
+}
+
+.page-header__column--submenu-link a {
+  display: block;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 60px;
+  padding: 0 14px;
+  color: #000000;
+}
+
+.page-header__column--submenu-link span {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-header__column--submenu-link a:hover {
+  color: #000000;
+}
+
+.page-header__column--submenu-link span:hover {
+  border-bottom: 1px solid #605e5c;
+}
+
+.page-header__column--submenu-active {
+  background-color: #ffa800;
+}
+
+.page-header__column--submenu-link .page-header__column--submenu-active {
+  color: #ffffff;
+}
+
+.page-header__column--submenu-link .page-header__column--submenu-active:hover  {
+  color: #ffffff;
+}
+
+.page-header__column--submenu-active span:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.page-header__column--submenu-1,
+.page-header__column--submenu-2,
+.page-header__column--submenu-3 {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  z-index: 1;
+}
+
+.page-header__column--submenu-1,
+.page-header__column--submenu-2 {
+  display: none;
+}
+
+.page-header__column--search {
+  margin-top: 53px;
+  margin-left: 26px;
+}
+
+.page-header__column--login-seller {
+  margin-top: 53px;
+  margin-left: 32px;
+}
+
+.page-header__column--registration-seller {
+  position: relative;
+  width: 193px;
+  height: 45px;
+  border: 3px solid #ffa800;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 52px;
+}
+
+.page-header__column--registration-seller:hover {
+  background-color: #ffa800;
+}
+
+.header-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.header-icon__search {
+  background-position: -293px -221px;
+  padding: 0;
+  border: none;
+}
+
+.header-icon__login {
+  background-position: -210px -221px;
+}
+
+.header-icon__registration {
+  display: inline-block;
+  width: 157px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-left: 56px;
+  color: #000000;
+}
+
+.header-icon__registration::before {
+  display: block;
+  position: absolute;
+  left: 23px;
+  top: 9px;
+  content: '';
+  width: 26px;
+  height: 22px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -858px -483px;
+}
+
+/* -------------  ------------- Main content -------------  ------------- */
+
+.client-instructions {
+  padding-top: 113px;
+}
+
+.client-instructions__header h1 {
+  font-size: 45px;
+  font-weight: 100;
+  text-align: center;
+  padding-right: 11px;
+  padding-bottom: 47px;
+}
+
+.client-instructions__lesson {
+  position: relative;
+}
+
+.client-instructions__lesson-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 978px;
+  height: 160px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-top: 44px;
+  padding-left: 299px;
+  background-image: url(../images/lesson-bg.png);
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.client-instructions__lesson-picture h2 {
+  font-size: 45px;
+  font-weight: 100;
+  padding-bottom: 11px;
+}
+
+.client-instructions__lesson-picture p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.client-instructions__lesson-picture:hover {
+  background-image: url(../images/lesson-bg_hover.png);
+}
+
+.client-instructions__lesson-picture:hover .client-instructions__lesson-link {
+  visibility: visible;
+}
+
+.client-instructions__lesson-picture:hover h2,
+.client-instructions__lesson-picture:hover p {
+  display: none;
+}
+
+.client-instructions__lesson-link {
+  visibility: hidden; 
+  position: absolute;
+  top: 57px;
+  left: 370px;
+  width: 240px;
+  height: 46px;
+  background-color: #ffa800;
+  border-radius: 23px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.client-instructions__lesson-link span {
+  margin-left: 77px;
+}
+
+.client-instructions__lesson-link span::before {
+  position: absolute;
+  top: 8px;
+  left: 46px;
+  display: block;
+  content: '';
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.client-instructions__lesson-link span::after {
+  position: absolute;
+  top: 15px;
+  left: 56px;
+  display: block;
+  content: '';
+  border: 7px solid transparent;
+  border-left-width: 11px;
+  border-right-width: 11px;
+  border-left-color: #000000;
+}
+
+.client-instructions__lesson-article {
+  width: 639px;
+  padding-left: 41px;
+  padding-top: 173px;
+  padding-bottom: 35px;
+}
+
+.client-instructions__lesson-article h1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.client-instructions__lesson-article a {
+  font-weight: 800;
+  border-bottom: 2px solid #efece7;
+  color: #000000;
+}
+
+.client-instructions__lesson-article a:hover {
+  color: #ed1c24;
+}
+
+.client-instructions__lesson-picture a {
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.client-instructions__lesson-picture a:hover {
+  color: #000000;
+}
+
+.client-instructions__lesson-article a:hover ~ .client-instructions__lesson-picture {
+  background-image: url(../images/lesson-bg_active.png);
+}
+
+.client-instructions__lesson-article p {
+  padding-bottom: 21px;
+}
+
+.client-instructions__paginator {
+  padding-left: 43px;
+}
+
+.client-instructions__paginator-button {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 72px;
+  margin-right: 11px;
+  border-radius: 50%;
+  border: 2px solid #ffa800;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+}
+
+.client-instructions__paginator-button:hover,
+.client-instructions__paginator-button--active {
+  background-color: #ffa800;
+}
+
+.client-instructions__paginator-button--dotted {
+  width: 19px;
+  line-height: 40px;
+  border: none;
+}
+
+.client-instructions__paginator-button--dotted:hover {
+  background-color: #ffffff;
+}
+
+
+/* ---------------  --------------- Footer ---------------  --------------- */
+
+.page-footer {
+  height: 139px;
+  background-color: #efece7;
+  clear: both;
+}
+
+.page-footer__columns {
+  overflow: hidden; 
+  color: #605e5c;
+}
+
+.page-footer__columns a {
+  color: #605e5c;
+}
+
+.page-footer__columns a:hover {
+  color: #177a93;
+}
+
+.page-footer__column {
+  float: left;
+  width: 24%;
+  margin-top: 39px;
+}
+
+.page-footer__column--center {
+  position: relative;
+  padding-left: 5px;
+}
+
+.page-footer__column--center::before,
+.page-footer__column--center::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 59px;
+  background-color: #cccccc;
+}
+
+.page-footer__column--center::before {
+  top: 0;
+  left: -44px;
+}
+
+.page-footer__column--center::after {
+  top: 0;
+  right: 36px;
+}
+
+.page-footer__column--right {
+  padding-left: 13px;
+}
+
+.contact-icon::before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+}
+
+.contact-icon__copyright::before {
+  background-position: -858px -779px;
+}
+
+.contact-icon__email::before {
+  background-position: -858px -733px;
+}
+
+.contact-icon__skype::before {
+  background-position: -858px -756px;
+}
+
+.contact-icon__email a,
+.contact-icon__skype a {
+  color: #177a93;
+  border-bottom: 1px solid #177a93;
+}
+
+.contact-icon__email a:hover,
+.contact-icon__skype a:hover {
+  color: #ffa800;
+  border-bottom: 1px solid #ffa800;
+}
+
+.page-footer__column--sm {
+  margin-top: 49px;
+  padding-left: 21px;
+}
+
+.social-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  margin-right: 2px;
+  border-radius: 5px;
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-icon a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  color: transparent;
+}
+
+.social-icon a:hover {
+  color: transparent;
+}
+
+.social-icon__vk {
+  background-position: -680px -558px;
+}
+
+.social-icon__vk:hover {
+  background-position: -637px -558px;
+}
+
+.social-icon__tw {
+  background-position: -729px -282px;
+}
+
+.social-icon__tw:hover {
+  background-position: -729px -509px;
+}
+
+.social-icon__blog {
+  background-position: -723px -558px;
+}
+
+.social-icon__blog:hover {
+  background-position: -729px -417px;
+}
+
+.social-icon__hh {
+  background-position: -729px -374px;
+}
+
+.social-icon__hh:hover {
+  background-position: -772px -648px;
+}
+
+.social-icon__gp {
+  background-position: -858px 0;
+}
+
+.social-icon__gp:hover {
+  background-position: -653px -782px;
+}
