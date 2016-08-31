@@ -93,6 +93,7 @@ a.page-header__column--menu-active {
   display: block;
   height: 60px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 60px;
   padding: 0 14px;
   color: #000000;
@@ -188,9 +189,10 @@ a.page-header__column--menu-active {
   display: inline-block;
   width: 157px;
   font-size: 13px;
+  font-weight: 600;
   line-height: 40px;
   text-transform: uppercase;
-  padding-left: 57px;
+  padding-left: 56px;
   color: #000000;
 }
 
@@ -209,147 +211,175 @@ a.page-header__column--menu-active {
 
 /* -------------  ------------- Main content -------------  ------------- */
 
-/* .client-reviews { 
-  font-size: 13px;
-  line-height: 20px;
-} */
-
-.client-reviews__header {
-  max-width: 560px;
-  /* *** */
-  min-width: 370px;
-  /* *** */
-  margin: auto;
-  text-align: center;
+.client-instructions {
+  padding-top: 113px;
 }
 
-.client-reviews__header::before {
-  content: '';
-  width: 185px;
-  height: 93px;
-  display: inline-block;
-  vertical-align: top;
-  background-image: url(../images/main_sprite.png);
-  background-repeat: no-repeat;
-  background-position: -101px -851px;
-  margin-top: 120px;
-  margin-left: 15px;
-  margin-bottom: 23px;
-}
-
-.client-reviews__header h1 {
+.client-instructions__header h1 {
   font-size: 45px;
-  font-weight: 300;
-  margin-bottom: 32px;
+  font-weight: 100;
+  text-align: center;
+  padding-right: 11px;
+  padding-bottom: 47px;
 }
 
-.client-reviews__header p {
-  margin-bottom: 105px;
-}
-
-.client-review {
-  display: table;
+.client-instructions__lesson {
   position: relative;
-  /* width: 788px; */
-  /* *** */
-  max-width: 788px;
-  min-width: 310px;
-  /* *** */
-  min-height: 257px;
-  background-color: #efece7;
-  border-radius: 20px;
-  margin-bottom: 90px;
-  padding: 53px 55px 50px 53px;
 }
 
-.client-review:last-child {
-  margin-bottom: 105px;
-}
-
-.client-review:nth-child(even) {
-  float: right;
-}
-
-.client-review:nth-child(odd) {
-  float: left;
-}
-
-.client-review::before {
+.client-instructions__lesson-picture {
   position: absolute;
-  content: '';
-  width: 160px;
+  top: 0;
+  left: 0;
+  width: 978px;
   height: 160px;
-  display: inline-block;
-  vertical-align: top;
+  line-height: 30px;
+  color: #ffffff;
+  padding-top: 44px;
+  padding-left: 299px;
+  background-image: url(../images/lesson-bg.png);
   background-repeat: no-repeat;
 }
 
-.client-review:nth-child(even)::before {
-  left: -189px;
-  top: -60px;
+.client-instructions__lesson-picture h2 {
+  font-size: 45px;
+  font-weight: 100;
+  padding-bottom: 11px;
 }
 
-.client-review:nth-child(odd)::before {
-  left: 819px;
-  top: -61px;
+.client-instructions__lesson-picture p {
+  font-size: 20px;
+  font-weight: 100;
 }
 
-.client-review--1::before {
-  background-image: url(../images/shl_logo.png);
+.client-instructions__lesson-picture:hover {
+  background-image: url(../images/lesson-bg_hover.png);
 }
 
-.client-review--2::before {
-  background-image: url(../images/bruco_logo.png);
+.client-instructions__lesson-picture:hover .client-instructions__lesson-link {
+  visibility: visible;
 }
 
-.client-review--3::before {
-  background-image: url(../images/club_logo.png);
+.client-instructions__lesson-picture:hover h2,
+.client-instructions__lesson-picture:hover p {
+  display: none;
 }
 
-.client-review::after {
+.client-instructions__lesson-link {
+  visibility: hidden; 
   position: absolute;
+  top: 57px;
+  left: 370px;
+  width: 240px;
+  height: 46px;
+  background-color: #ffa800;
+  border-radius: 23px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.client-instructions__lesson-link span {
+  margin-left: 77px;
+}
+
+.client-instructions__lesson-link span::before {
+  position: absolute;
+  top: 8px;
+  left: 46px;
+  display: block;
   content: '';
-  display: inline-block;
-  vertical-align: top;
-  background-image: url(../images/main_sprite.png);
-  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
-.client-review:nth-child(even)::after {
-  left: -113px;
-  top: 109px;
-  width: 114px;
-  height: 97px;
-  background-position: -299px -850px;
+.client-instructions__lesson-link span::after {
+  position: absolute;
+  top: 15px;
+  left: 56px;
+  display: block;
+  content: '';
+  border: 7px solid transparent;
+  border-left-width: 11px;
+  border-right-width: 11px;
+  border-left-color: #000000;
 }
 
-.client-review:nth-child(odd)::after {
-  left: 787px;
-  top: 105px;
-  width: 115px;
-  height: 103px;
-  background-position: -425px -847px;
+.client-instructions__lesson-article {
+  width: 639px;
+  padding-left: 41px;
+  padding-top: 173px;
+  padding-bottom: 35px;
 }
 
-.client-review__article {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.client-review__article-header h2 {
+.client-instructions__lesson-article h1 {
+  margin-bottom: 10px;
   font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 2px;
 }
 
-.client-review__article-header a {
-  font-style: italic;
-  text-decoration: underline;
-  color: #177a93;
+.client-instructions__lesson-article a {
+  font-weight: 800;
+  border-bottom: 2px solid #efece7;
+  color: #000000;
 }
 
-.client-review__article p {
-   margin-top: 20px;
+.client-instructions__lesson-article a:hover {
+  color: #ed1c24;
+}
+
+.client-instructions__lesson-picture a {
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.client-instructions__lesson-picture a:hover {
+  color: #000000;
+}
+
+.client-instructions__lesson-article a:hover ~ .client-instructions__lesson-picture {
+  background-image: url(../images/lesson-bg_active.png);
+}
+
+.client-instructions__lesson-article p {
+  padding-bottom: 21px;
+}
+
+.client-instructions__paginator {
+  padding-left: 43px;
+}
+
+.client-instructions__paginator-button {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 72px;
+  margin-right: 11px;
+  border-radius: 50%;
+  border: 2px solid #ffa800;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+}
+
+.client-instructions__paginator-button:hover,
+.client-instructions__paginator-button--active {
+  background-color: #ffa800;
+}
+
+.client-instructions__paginator-button--dotted {
+  width: 19px;
+  line-height: 40px;
+  border: none;
+}
+
+.client-instructions__paginator-button--dotted:hover {
+  background-color: #ffffff;
 }
 
 
