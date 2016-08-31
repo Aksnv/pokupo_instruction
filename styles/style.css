@@ -8,10 +8,7 @@ body {
 }
 
 .container {
-  /* width: 978px; */
-  /* *** */
-  max-width: 978px;
-  /* *** */
+  width: 989px;
   margin: auto;
 }
 
@@ -27,7 +24,7 @@ body {
 }
 
 .page-header__column--logo {
-  margin-right: 29px;
+  margin-right: 54px;
 }
 
 .page-header__column--logo a {
@@ -42,7 +39,7 @@ body {
 
 .page-header__column--menu {
   position: relative;
-  width: 475px;
+  width: 530px;
 }
 
 .page-header__column--menu-link,
@@ -56,20 +53,20 @@ body {
   position: relative;
   display: block;
   height: 117px;
-  padding-left: 10px;
-  padding-right: 9px;
+  padding-left: 15px;
+  padding-right: 14px;
   font-size: 16px;
   line-height: 126px;
   color: #000000;
 }
 
-.page-header__column--menu-link a:hover {
+.page-header__column--menu-link a:hover,
+a.page-header__column--menu-active {
   color: #018f3c;
 }
 
 .page-header__column--menu-active {
   border-bottom: 3px solid #018f3c;
-  color: #018f3c;
 }
 
 .page-header__column--menu-active::after {
@@ -97,13 +94,11 @@ body {
   height: 60px;
   font-size: 14px;
   line-height: 60px;
-  padding: 0;
+  padding: 0 14px;
   color: #000000;
 }
 
 .page-header__column--submenu-link span {
-  margin-left: 13px;
-  margin-right: 14px;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -142,7 +137,7 @@ body {
 }
 
 .page-header__column--submenu-1,
-.page-header__column--submenu-3 {
+.page-header__column--submenu-2 {
   display: none;
 }
 
@@ -158,12 +153,12 @@ body {
 
 .page-header__column--registration-seller {
   position: relative;
-  width: 220px;
+  width: 193px;
   height: 45px;
   border: 3px solid #ffa800;
   border-radius: 30px;
   margin-top: 40px;
-  margin-left: 6px;
+  margin-left: 52px;
 }
 
 .page-header__column--registration-seller:hover {
