@@ -211,176 +211,219 @@ a.page-header__column--menu-active {
 
 /* -------------  ------------- Main content -------------  ------------- */
 
-.client-instructions {
-  padding-top: 113px;
+.client-lesson__button-back {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
-.client-instructions__header h1 {
-  font-size: 45px;
-  font-weight: 100;
-  text-align: center;
-  padding-right: 11px;
-  padding-bottom: 47px;
+.client-lesson__button-back a {
+  display: inline-block;
+  width: 122px;
+  height: 36px;
+  border: 2px solid #ffa800;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-left: 39px;
+  color: #ffa800;
 }
 
-.client-instructions__lesson {
+.client-lesson__button-back a:hover {
+  border: 2px solid #CC8600;
+  color: #CC8600;
+}
+
+.client-lesson__button-back a::before {
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: 11px;
+  content: '';
+  width: 20px;
+  height: 15px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -832px -392px;
+}
+
+.client-lesson__button-back a:hover::before {
+  background-position: -810px -392px;
+}
+
+.client-lesson__button-back:last-child {
+  margin-top: 0;
+  margin-bottom: 68px;
+}
+
+.client-lesson__header h1,
+.client-lesson__presentation-article h2,
+.client-lesson__instruction h2,
+.instruction-content__block h1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.client-lesson__header h1 {
+  padding-left: 49px;
+  padding-top: 23px;
+  padding-bottom: 17px;
+}
+
+.client-lesson__video {
+  margin-bottom: 35px;
+}
+
+.client-lesson__presentation-picture,
+.client-lesson__presentation-article {
+  float: left;
+}
+
+.client-lesson__presentation-article {
+  width: 334px;
+  padding-left: 34px;
+  padding-top: 13px;
+}
+
+.client-lesson__presentation-article h2 {
+  padding-bottom: 12px;
+}
+
+.client-lesson__presentation-download {
+  position: relative;
+  margin-top: 84px;
+  margin-left: 1px;
+  margin-bottom: 30px;
+}
+
+.client-lesson__presentation-download a {
+  display: inline-block;
+  width: 167px;
+  height: 36px;
+  border: 2px solid #ffa800;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  color: #000000;
+}
+
+.client-lesson__presentation-download a:hover {
+  background-color: #ffa800;
+}
+
+.client-lesson__presentation-download a::before {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  content: '';
+  width: 20px;
+  height: 15px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -859px -844px;
+} 
+
+.client-lesson__instruction {
+  clear: both;
+}
+
+.client-lesson__instruction h2 {
+  padding-top: 12px;
+  padding-left: 49px;
+  padding-bottom: 20px;
+}
+
+.instruction-content {
+  position: relative;
+  width: 978px;
+  background-color: #efece7;
+}
+
+.instruction-content::before,
+.instruction-content::after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.instruction-content::before {
+  top: 0;
+  right: 0;
+  border: 15px solid transparent;
+  border-right-color: #ffffff;
+  border-top-color: #ffffff;
+  border-left-color: #faf9f8;
+  border-bottom-color: #faf9f8;
+}
+
+.instruction-content::after {
+  top: 8px;
+  right: -20px;
+  border: 21px solid transparent;
+  border-left-color: #e3e0db;
+  transform: rotate(-45deg); 
+}
+
+.instruction-content__block {
+  width: 696px;
+  padding-left: 49px;
+}
+
+.instruction-content__block h1 {
+  padding-top: 18px;
+  padding-bottom: 23px;
+}
+
+.instruction-content__block:first-child h1 {
+  padding-top: 30px;
+}
+
+.instruction-content__block p {
+  padding-bottom: 20px;
+}
+
+.instruction-content__block-picture {
   position: relative;
 }
 
-.client-instructions__lesson-picture {
+.instruction-content__block-picture img {
+  padding-top: 5px;
+}
+
+.instruction-content__block-picture::after {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 978px;
-  height: 160px;
-  line-height: 30px;
-  color: #ffffff;
-  padding-top: 44px;
-  padding-left: 299px;
-  background-image: url(../images/lesson-bg.png);
-  background-repeat: no-repeat;
-  transition: all 0.3s ease-in-out;
-}
-
-.client-instructions__lesson-picture h2 {
-  font-size: 45px;
-  font-weight: 100;
-  padding-bottom: 11px;
-}
-
-.client-instructions__lesson-picture p {
-  font-size: 20px;
-  font-weight: 100;
-}
-
-.client-instructions__lesson-picture:hover {
-  background-image: url(../images/lesson-bg_hover.png);
-}
-
-.client-instructions__lesson-picture:hover .client-instructions__lesson-link {
-  visibility: visible;
-}
-
-.client-instructions__lesson-picture:hover h2,
-.client-instructions__lesson-picture:hover p {
-  display: none;
-}
-
-.client-instructions__lesson-link {
-  visibility: hidden; 
-  position: absolute;
-  top: 57px;
-  left: 370px;
-  width: 240px;
-  height: 46px;
-  background-color: #ffa800;
-  border-radius: 23px;
+  top: 20px;
+  right: -250px;
+  content: 'Для начала работы с сервисом нужно пройти простую процедуру регистрации.';
+  display: block;
+  width: 230px;
+  font-style: italic;
   font-size: 13px;
   font-weight: 600;
-  line-height: 46px;
-  text-transform: uppercase;
 }
 
-.client-instructions__lesson-link span {
-  margin-left: 77px;
+.instruction-content__block:last-child {
+  padding-bottom: 44px;
 }
 
-.client-instructions__lesson-link span::before {
-  position: absolute;
-  top: 8px;
-  left: 46px;
-  display: block;
-  content: '';
-  width: 28px;
-  height: 28px;
-  border: 1px solid #000000;
-  border-radius: 50%;
+.client-lesson__sm-links {
+  width: 252px;
+  height: 40px;
+  background-image: url(../images/pages/lesson/sm-buttons.png);
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-left: 51px;
+  margin-bottom: 40px;
 }
 
-.client-instructions__lesson-link span::after {
-  position: absolute;
-  top: 15px;
-  left: 56px;
-  display: block;
-  content: '';
-  border: 7px solid transparent;
-  border-left-width: 11px;
-  border-right-width: 11px;
-  border-left-color: #000000;
-}
-
-.client-instructions__lesson-article {
-  width: 639px;
-  padding-left: 41px;
-  padding-top: 173px;
-  padding-bottom: 35px;
-}
-
-.client-instructions__lesson-article h1 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.client-instructions__lesson-article a {
-  font-weight: 800;
-  border-bottom: 2px solid #efece7;
-  color: #000000;
-}
-
-.client-instructions__lesson-article a:hover {
-  color: #ed1c24;
-}
-
-.client-instructions__lesson-picture a {
-  font-weight: 600;
-  border-bottom: none;
-}
-
-.client-instructions__lesson-picture a:hover {
-  color: #000000;
-}
-
-.client-instructions__lesson-article a:hover ~ .client-instructions__lesson-picture {
-  background-image: url(../images/lesson-bg_active.png);
-}
-
-.client-instructions__lesson-article p {
-  padding-bottom: 21px;
-}
-
-.client-instructions__paginator {
-  padding-left: 43px;
-}
-
-.client-instructions__paginator-button {
-  float: left;
-  display: block;
-  width: 35px;
-  height: 35px;
-  margin-bottom: 72px;
-  margin-right: 11px;
-  border-radius: 50%;
-  border: 2px solid #ffa800;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 35px;
-  text-align: center;
-  color: #000000;
-}
-
-.client-instructions__paginator-button:hover,
-.client-instructions__paginator-button--active {
-  background-color: #ffa800;
-}
-
-.client-instructions__paginator-button--dotted {
-  width: 19px;
-  line-height: 40px;
-  border: none;
-}
-
-.client-instructions__paginator-button--dotted:hover {
-  background-color: #ffffff;
+.client-lesson__sm-links:hover {
+  cursor: pointer;
 }
 
 
