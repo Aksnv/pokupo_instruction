@@ -239,6 +239,7 @@ a.page-header__column--menu-active {
   padding-left: 299px;
   background-image: url(../images/lesson-bg.png);
   background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
 }
 
 .client-instructions__lesson-picture h2 {
@@ -386,14 +387,13 @@ a.page-header__column--menu-active {
 /* ---------------  --------------- Footer ---------------  --------------- */
 
 .page-footer {
-  min-height: 260px;
+  height: 139px;
   background-color: #efece7;
   clear: both;
 }
 
 .page-footer__columns {
   overflow: hidden; 
-  padding-bottom: 30px;
   color: #605e5c;
 }
 
@@ -407,8 +407,37 @@ a.page-header__column--menu-active {
 
 .page-footer__column {
   float: left;
-  width: 25%;
-  margin-top: 55px;
+  width: 24%;
+  margin-top: 39px;
+}
+
+.page-footer__column--center {
+  position: relative;
+  padding-left: 5px;
+}
+
+.page-footer__column--center::before,
+.page-footer__column--center::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 59px;
+  background-color: #cccccc;
+}
+
+.page-footer__column--center::before {
+  top: 0;
+  left: -44px;
+}
+
+.page-footer__column--center::after {
+  top: 0;
+  right: 36px;
+}
+
+.page-footer__column--right {
+  padding-left: 13px;
 }
 
 .contact-icon::before {
@@ -448,7 +477,8 @@ a.page-header__column--menu-active {
 }
 
 .page-footer__column--sm {
-  margin-top: 66px;
+  margin-top: 49px;
+  padding-left: 21px;
 }
 
 .social-icon {
