@@ -74,6 +74,65 @@
 
   /* -------------  Main content  ------------- */
 
+  .client-instructions__lesson-picture {
+    max-width: 360px;
+    margin-left: -15px; 
+  }
+
+  .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_1.png);
+    background-position: center;
+  }
+
+  .client-instructions__lesson:nth-of-type(2) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_2.png);
+    background-position: center;
+  }
+
+  .client-instructions__lesson:nth-of-type(3) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_3.png);
+    background-position: center;
+  } 
+
+  .client-instructions__lesson-picture h4,
+  .client-instructions__lesson-picture p,
+  .client-instructions__lesson-link {
+    display: none;
+  }
+
+  .client-instructions__lesson-article {
+    max-width: 330px;
+    padding-left: 15px;
+  }
+
+  .client-instructions__lesson:nth-of-type(1) a:hover ~ .client-instructions__lesson-picture {
+    background-image: url(../images/lesson-bg_750_1.png);
+  }
+
+  .client-instructions__lesson:nth-of-type(2) a:hover ~ .client-instructions__lesson-picture {
+    background-image: url(../images/lesson-bg_750_2.png);
+  }
+
+  .client-instructions__lesson:nth-of-type(3) a:hover ~ .client-instructions__lesson-picture {
+    background-image: url(../images/lesson-bg_750_3.png);
+  }
+
+  .client-instructions__paginator {
+    padding-left: 46px;
+  }
+
+  .client-instructions__paginator-button--active {
+    margin-right: 20px;
+  }
+
+  .client-instructions__paginator-button:nth-child(4),
+  .client-instructions__paginator-button:nth-child(5) {
+    display: none;
+  }
+
+  .client-instructions__paginator-button--dotted {
+    margin-right: 22px;
+  }
 
   /* --------------- Footer --------------- */
 
