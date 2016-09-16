@@ -261,7 +261,7 @@ a.page-header__column--menu-active {
 .client-lesson__header h1,
 .client-lesson__presentation-article h2,
 .client-lesson__instruction h2,
-.instruction-content__block h1 {
+.instruction-content__block h3 {
   font-size: 18px;
   font-weight: 800;
 }
@@ -274,6 +274,11 @@ a.page-header__column--menu-active {
 
 .client-lesson__video {
   margin-bottom: 35px;
+}
+
+.client-lesson__video video {
+  widows: 978px; 
+  height: 579px; 
 }
 
 .client-lesson__presentation-picture,
@@ -375,12 +380,12 @@ a.page-header__column--menu-active {
   padding-left: 49px;
 }
 
-.instruction-content__block h1 {
+.instruction-content__block h3 {
   padding-top: 18px;
   padding-bottom: 23px;
 }
 
-.instruction-content__block:first-child h1 {
+.instruction-content__block:first-child h3 {
   padding-top: 30px;
 }
 

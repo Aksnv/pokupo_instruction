@@ -242,7 +242,7 @@ a.page-header__column--menu-active {
   transition: all 0.3s ease-in-out;
 }
 
-.client-instructions__lesson-picture h2 {
+.client-instructions__lesson-picture h4 {
   font-size: 45px;
   font-weight: 100;
   padding-bottom: 11px;
@@ -316,7 +316,7 @@ a.page-header__column--menu-active {
   padding-bottom: 35px;
 }
 
-.client-instructions__lesson-article h1 {
+.client-instructions__lesson-article h3 {
   margin-bottom: 10px;
   font-size: 18px;
 }
