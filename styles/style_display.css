@@ -1,0 +1,37 @@
+/* Diffrent display layout styles */
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+
+  .container {
+    /* position: static; */
+    max-width: 750px;
+  }
+
+  /* ---------------  Header --------------- */
+
+
+  /* -------------  Main content  ------------- */
+
+
+  /* --------------- Footer --------------- */
+
+}
+
+
+@media screen and (max-width: 749px) {
+
+  .container {
+    /* position: relative; */
+    /* position: static;  */
+    max-width: 340px;
+  }
+
+  /* ---------------  Header --------------- */
+
+
+  /* -------------  Main content  ------------- */
+
+
+  /* --------------- Footer --------------- */
+
+}
