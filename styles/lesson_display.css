@@ -89,7 +89,7 @@
   .container {
     /* position: relative; */
     /* position: static;  */
-    max-width: 340px;
+    max-width: 360px;
   }
 
   /* ---------------  Header --------------- */
@@ -97,7 +97,105 @@
 
   /* -------------  Main content  ------------- */
 
+  .client-lesson__button-back {
+    margin-left: 29px;
+  }
 
+  .client-lesson__button-back a {
+    width: 198px;
+    padding-left: 97px;
+  }
+
+  .client-lesson__button-back a::before {
+    left: 73px;
+  }
+
+  .client-lesson__header h1 {
+    padding-left: 28px;
+    padding-right: 32px;
+    padding-bottom: 4px;
+  }
+
+  .client-lesson__video {
+    margin-bottom: 40px;
+  }
+
+  .client-lesson__video video {
+    width: 360px; 
+    height: 228px; 
+    margin-left: -2px;
+  }
+
+  .client-lesson__presentation {
+    margin-left: -2px;
+  }
+
+  .client-lesson__presentation-picture,
+  .client-lesson__presentation-article {
+    float: none;
+  }
+
+  .client-lesson__presentation-article {
+    width: 330px;
+    padding-left: 30px;
+    padding-top: 18px;
+  }
+
+  .client-lesson__presentation-download {
+    margin-top: 25px;
+  }
+
+  .client-lesson__presentation-download a {
+    width: 208px;
+    padding-left: 87px;
+  }
+
+  .client-lesson__presentation-download a::before {
+    left: 61px;
+  } 
+
+  .client-lesson__instruction h2 {
+    padding-top: 13px;
+    padding-left: 28px;
+    padding-bottom: 17px;
+  }
+
+  .instruction-content {
+    max-width: 360px;
+    margin-left: -2px;
+  }
+
+  .instruction-content::before,
+  .instruction-content::after {
+    display: none;
+  }
+
+  .instruction-content__block {
+    width: 360px;
+    padding-left: 31px;
+    padding-right: 24px;
+  }
+
+  .instruction-content__block:first-child h3 {
+    padding-top: 33px;
+  }
+
+  .instruction-content__block-picture {
+    width: 300px;
+  }
+
+  .instruction-content__block-picture::after {
+    display: none;
+  }
+
+  .instruction-content__block-picture p {
+    display: block;
+    padding-top: 9px;
+  }
+
+  .instruction-content__block:last-child {
+    padding-bottom: 25px;
+  }
 
 
   /* --------------- Footer --------------- */
