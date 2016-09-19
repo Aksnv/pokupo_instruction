@@ -277,7 +277,7 @@ a.page-header__column--menu-active {
 }
 
 .client-lesson__video video {
-  widows: 978px; 
+  width: 978px; 
   height: 579px; 
 }
 
@@ -408,6 +408,17 @@ a.page-header__column--menu-active {
   content: 'Для начала работы с сервисом нужно пройти простую процедуру регистрации.';
   display: block;
   width: 230px;
+  /* font-style: italic;
+  font-size: 13px;
+  font-weight: 600; */
+}
+
+.instruction-content__block-picture p {
+  display: none;
+}
+
+.instruction-content__block-picture::after,
+.instruction-content__block-picture p {
   font-style: italic;
   font-size: 13px;
   font-weight: 600;

@@ -12,8 +12,72 @@
 
   /* -------------  Main content  ------------- */
 
+  .client-lesson__header h1 {
+    padding-bottom: 6px;
+  }
 
+  .client-lesson__video video {
+    width: 750px; 
+    height: 443px; 
+    margin-left: 9px;
+  }
 
+  .client-lesson__presentation {
+    margin-left: 50px;
+  }
+
+  .client-lesson__presentation-picture,
+  .client-lesson__presentation-article {
+    float: none;
+  }
+
+  .client-lesson__presentation-article {
+    width: auto;
+    padding-left: 0;
+    padding-top: 18px;
+  }
+
+  .client-lesson__presentation-download {
+    margin-top: 25px;
+  }
+
+  .client-lesson__instruction h2 {
+    padding-top: 13px;
+    padding-left: 48px;
+    padding-bottom: 17px;
+  }
+
+  .instruction-content {
+    max-width: 750px;
+    margin-left: 9px;
+  }
+
+  .instruction-content::before,
+  .instruction-content::after {
+    display: none;
+  }
+
+  .instruction-content__block {
+    width: 686px;
+    padding-left: 40px;
+  }
+
+  .instruction-content__block:first-child h3 {
+    padding-top: 33px;
+  }
+
+  .instruction-content__block-picture::after {
+    display: none;
+  }
+
+  .instruction-content__block-picture p {
+    display: block;
+    padding-top: 9px;
+  }
+
+  .instruction-content__block:last-child {
+    padding-bottom: 25px;
+  }
 
   /* --------------- Footer --------------- */
 
