@@ -135,12 +135,12 @@
   }
 
   .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link a + .page-header__column--submenu-platform .page-header__column--submenu-link,
-  .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link a + .page-header__column--submenu-help .page-header__column--submenu-link {
+  .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link a + .page-header__column--submenu-company .page-header__column--submenu-link {
     display: none;
   }
 
   .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link a:hover + .page-header__column--submenu-platform .page-header__column--submenu-link,
-  .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link a:hover + .page-header__column--submenu-help .page-header__column--submenu-link {
+  .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link a:hover + .page-header__column--submenu-company .page-header__column--submenu-link {
     display: block;
   }
 
