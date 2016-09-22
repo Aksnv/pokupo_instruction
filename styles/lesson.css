@@ -20,7 +20,7 @@ body {
 
 .page-header {
   height: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 100px; 
 }
 
 .page-header__column {
@@ -215,7 +215,6 @@ body {
 
 .client-lesson__button-back {
   position: relative;
-  margin-top: 100px;
   margin-left: 50px;
 }
 
@@ -239,11 +238,11 @@ body {
 }
 
 .client-lesson__button-back a::before {
-  display: block;
   position: absolute;
   left: 16px;
   top: 11px;
   content: '';
+  /* display: block; */
   width: 20px;
   height: 15px;
   background-image: url(../images/main_sprite.png);
@@ -256,7 +255,6 @@ body {
 }
 
 .client-lesson__button-back:last-child {
-  margin-top: 0;
   margin-bottom: 68px;
 }
 
@@ -271,7 +269,7 @@ body {
 .client-lesson__header h1 {
   padding-left: 49px;
   padding-top: 23px;
-  padding-bottom: 17px;
+  padding-bottom: 2px;
 }
 
 .client-lesson__video {
@@ -280,7 +278,7 @@ body {
 
 .client-lesson__video video {
   width: 978px; 
-  height: 579px; 
+  height: 579px;
 }
 
 .client-lesson__presentation-picture,
@@ -324,11 +322,11 @@ body {
 }
 
 .client-lesson__presentation-download a::before {
-  display: block;
   position: absolute;
   left: 20px;
   top: 12px;
   content: '';
+  /* display: block; */
   width: 20px;
   height: 15px;
   background-image: url(../images/main_sprite.png);
@@ -343,7 +341,7 @@ body {
 .client-lesson__instruction h2 {
   padding-top: 12px;
   padding-left: 49px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .instruction-content {
@@ -388,7 +386,7 @@ body {
 }
 
 .instruction-content__block:first-child h3 {
-  padding-top: 30px;
+  padding-top: 32px;
 }
 
 .instruction-content__block p {
@@ -410,9 +408,6 @@ body {
   content: 'Для начала работы с сервисом нужно пройти простую процедуру регистрации.';
   display: block;
   width: 230px;
-  /* font-style: italic;
-  font-size: 13px;
-  font-weight: 600; */
 }
 
 .instruction-content__block-picture p {
@@ -422,7 +417,6 @@ body {
 .instruction-content__block-picture::after,
 .instruction-content__block-picture p {
   font-style: italic;
-  font-size: 13px;
   font-weight: 600;
 }
 

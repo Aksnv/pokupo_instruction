@@ -11,7 +11,7 @@
   /* ---------------  Header --------------- */
 
   .page-header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .page-header__column--logo {
@@ -223,18 +223,26 @@
 
   /* -------------  Main content  ------------- */
 
+  .client-lesson__button-back {
+    margin-left: 42px;
+  }
+
+  .client-lesson__button-back:last-child {
+    margin-bottom: 60px;
+  }
+
   .client-lesson__header h1 {
+    padding-left: 41px;
     padding-bottom: 6px;
   }
 
   .client-lesson__video video {
     width: 750px; 
-    height: 443px; 
-    margin-left: 9px;
+    height: 443px;
   }
 
   .client-lesson__presentation {
-    margin-left: 50px;
+    margin-left: 42px;
   }
 
   .client-lesson__presentation-picture,
@@ -254,13 +262,12 @@
 
   .client-lesson__instruction h2 {
     padding-top: 13px;
-    padding-left: 48px;
+    padding-left: 40px;
     padding-bottom: 17px;
   }
 
   .instruction-content {
-    max-width: 750px;
-    margin-left: 9px;
+    width: 750px;
   }
 
   .instruction-content::before,
@@ -284,10 +291,15 @@
   .instruction-content__block-picture p {
     display: block;
     padding-top: 9px;
+    padding-left: 2px;
   }
 
   .instruction-content__block:last-child {
     padding-bottom: 25px;
+  }
+
+  .client-lesson__sm-links {
+    margin-left: 42px;
   }
 
   /* --------------- Footer --------------- */
@@ -339,7 +351,7 @@
 }
 
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 780px) {
 
   .container {
     /* position: static; */ 
@@ -349,6 +361,10 @@
   }
 
   /* ---------------  Header --------------- */
+
+  .page-header {
+    margin-bottom: 20px;
+  }
 
   .page-header__column--logo {
     margin-right: 28px;
@@ -427,6 +443,10 @@
     margin-left: 29px;
   }
 
+  .client-lesson__button-back:last-child {
+    margin-bottom: 50px;
+  }
+
   .client-lesson__button-back a {
     width: 198px;
     padding-left: 97px;
@@ -443,32 +463,21 @@
   }
 
   .client-lesson__video {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .client-lesson__video video {
     width: 360px; 
     height: 228px; 
-    margin-left: -2px;
   }
 
   .client-lesson__presentation {
     margin-left: -2px;
   }
 
-  .client-lesson__presentation-picture,
-  .client-lesson__presentation-article {
-    float: none;
-  }
-
   .client-lesson__presentation-article {
     width: 330px;
     padding-left: 30px;
-    padding-top: 18px;
-  }
-
-  .client-lesson__presentation-download {
-    margin-top: 25px;
   }
 
   .client-lesson__presentation-download a {
@@ -481,19 +490,12 @@
   } 
 
   .client-lesson__instruction h2 {
-    padding-top: 13px;
     padding-left: 28px;
-    padding-bottom: 17px;
   }
 
   .instruction-content {
-    max-width: 360px;
+    width: 360px;
     margin-left: -2px;
-  }
-
-  .instruction-content::before,
-  .instruction-content::after {
-    display: none;
   }
 
   .instruction-content__block {
@@ -510,17 +512,12 @@
     width: 300px;
   }
 
-  .instruction-content__block-picture::after {
-    display: none;
-  }
-
-  .instruction-content__block-picture p {
-    display: block;
-    padding-top: 9px;
-  }
-
   .instruction-content__block:last-child {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
+  }
+
+  .client-lesson__sm-links {
+    margin-left: 53px;
   }
 
   /* --------------- Footer --------------- */
