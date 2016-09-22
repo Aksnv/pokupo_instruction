@@ -20,7 +20,7 @@ body {
 
 .page-header {
   height: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 113px;
 }
 
 .page-header__column {
@@ -213,10 +213,6 @@ body {
 
 /* -------------  ------------- Main content -------------  ------------- */
 
-.client-instructions {
-  padding-top: 0;
-}
-
 .client-instructions__header h1 {
   font-size: 45px;
   font-weight: 100;
@@ -263,9 +259,9 @@ body {
   visibility: visible;
 }
 
-.client-instructions__lesson-picture:hover h2,
+.client-instructions__lesson-picture:hover h4,
 .client-instructions__lesson-picture:hover p {
-  display: none;
+  opacity: 0.5;
 }
 
 .client-instructions__lesson-link {
@@ -278,7 +274,6 @@ body {
   background-color: #ffa800;
   border-radius: 23px;
   font-size: 13px;
-  font-weight: 600;
   line-height: 46px;
   text-transform: uppercase;
 }
@@ -291,8 +286,8 @@ body {
   position: absolute;
   top: 8px;
   left: 46px;
-  display: block;
   content: '';
+  /* display: block; */
   width: 28px;
   height: 28px;
   border: 1px solid #000000;
@@ -303,11 +298,10 @@ body {
   position: absolute;
   top: 15px;
   left: 56px;
-  display: block;
   content: '';
+  /* display: block; */
   border: 7px solid transparent;
   border-left-width: 11px;
-  border-right-width: 11px;
   border-left-color: #000000;
 }
 
@@ -356,7 +350,7 @@ body {
 
 .client-instructions__paginator-button {
   float: left;
-  display: block;
+  /* display: block; */
   width: 35px;
   height: 35px;
   margin-bottom: 72px;

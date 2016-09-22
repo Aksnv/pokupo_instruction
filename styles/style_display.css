@@ -11,7 +11,7 @@
   /* ---------------  Header --------------- */
 
   .page-header {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .page-header__column--logo {
@@ -223,9 +223,13 @@
 
   /* -------------  Main content  ------------- */
 
+  .client-instructions__header h1 {
+    padding-right: 0;
+  }
+
   .client-instructions__lesson-picture {
-    max-width: 750px;
-    margin-left: -5px;
+    width: 750px;
+    /* margin-left: 0; */
   }
 
   .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
@@ -246,10 +250,6 @@
     display: none;
   }
 
-  .client-instructions__lesson-article {
-    padding-left: 35px;
-  }
-
   .client-instructions__lesson:nth-of-type(1) a:hover ~ .client-instructions__lesson-picture {
     background-image: url(../images/lesson-bg_750_1.png);
   }
@@ -262,8 +262,8 @@
     background-image: url(../images/lesson-bg_750_3.png);
   }
 
-  .client-instructions__paginator {
-    padding-left: 37px;
+  .client-instructions__paginator-button {
+    margin-bottom: 70px;
   }
 
   /* --------------- Footer --------------- */
@@ -400,8 +400,7 @@
   /* -------------  Main content  ------------- */
 
   .client-instructions__lesson-picture {
-    max-width: 360px;
-    margin-left: -15px; 
+    width: 360px;
   }
 
   .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
@@ -417,33 +416,23 @@
   .client-instructions__lesson:nth-of-type(3) .client-instructions__lesson-picture { 
     background-image: url(../images/lesson-bg_750_3.png);
     background-position: center;
-  } 
-
-  .client-instructions__lesson-picture h4,
-  .client-instructions__lesson-picture p,
-  .client-instructions__lesson-link {
-    display: none;
   }
 
   .client-instructions__lesson-article {
-    max-width: 330px;
-    padding-left: 15px;
+    width: 335px;
+    padding-left: 29px;
   }
 
-  .client-instructions__lesson:nth-of-type(1) a:hover ~ .client-instructions__lesson-picture {
-    background-image: url(../images/lesson-bg_750_1.png);
-  }
-
-  .client-instructions__lesson:nth-of-type(2) a:hover ~ .client-instructions__lesson-picture {
-    background-image: url(../images/lesson-bg_750_2.png);
-  }
-
-  .client-instructions__lesson:nth-of-type(3) a:hover ~ .client-instructions__lesson-picture {
-    background-image: url(../images/lesson-bg_750_3.png);
+  .client-instructions__lesson:last-of-type .client-instructions__lesson-article {
+    padding-bottom: 16px;
   }
 
   .client-instructions__paginator {
-    padding-left: 46px;
+    padding-left: 60px;
+  }
+
+  .client-instructions__paginator-button {
+    margin-bottom: 40px;
   }
 
   .client-instructions__paginator-button--active {
