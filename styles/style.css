@@ -237,6 +237,7 @@ body {
   padding-left: 299px;
   background-image: url(../images/lesson-bg.png);
   background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -312,7 +313,7 @@ body {
   padding-bottom: 35px;
 }
 
-.client-instructions__lesson-article h3 {
+.client-instructions__lesson-article header {
   margin-bottom: 12px;
   font-size: 18px;
 }

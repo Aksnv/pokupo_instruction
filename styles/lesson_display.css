@@ -233,12 +233,11 @@
 
   .client-lesson__header h1 {
     padding-left: 41px;
-    padding-bottom: 6px;
   }
 
   .client-lesson__video video {
     width: 750px; 
-    height: 443px;
+    height: 422px;
   }
 
   .client-lesson__presentation {
@@ -351,7 +350,7 @@
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 750px) {
 
   .container {
     /* position: static; */ 
@@ -459,7 +458,6 @@
   .client-lesson__header h1 {
     padding-left: 28px;
     padding-right: 32px;
-    padding-bottom: 4px;
   }
 
   .client-lesson__video {
@@ -468,7 +466,7 @@
 
   .client-lesson__video video {
     width: 360px; 
-    height: 228px; 
+    height: 203px;
   }
 
   .client-lesson__presentation {

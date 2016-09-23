@@ -269,7 +269,7 @@ body {
 .client-lesson__header h1 {
   padding-left: 49px;
   padding-top: 23px;
-  padding-bottom: 2px;
+  padding-bottom: 17px;
 }
 
 .client-lesson__video {
@@ -278,7 +278,8 @@ body {
 
 .client-lesson__video video {
   width: 978px; 
-  height: 579px;
+  height: 550px;
+  border-top: 1px solid #ffffff;
 }
 
 .client-lesson__presentation-picture,

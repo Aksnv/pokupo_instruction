@@ -229,7 +229,7 @@
 
   .client-instructions__lesson-picture {
     width: 750px;
-    /* margin-left: 0; */
+    transition: none;
   }
 
   .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
@@ -315,7 +315,7 @@
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 750px) {
 
   .container {
     /* position: static; */ 
