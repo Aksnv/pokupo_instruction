@@ -233,17 +233,17 @@
   }
 
   .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
-    background-image: url(../images/lesson-bg_750_1a.png);
+    background-image: url(../images/lesson-bg_750_1a.jpg);
     background-position: center;
   }
 
   .client-instructions__lesson:nth-of-type(2) .client-instructions__lesson-picture { 
-    background-image: url(../images/lesson-bg_750_2a.png);
+    background-image: url(../images/lesson-bg_750_2a.jpg);
     background-position: center;
   }
 
   .client-instructions__lesson:nth-of-type(3) .client-instructions__lesson-picture { 
-    background-image: url(../images/lesson-bg_750_3a.png);
+    background-image: url(../images/lesson-bg_750_3a.jpg);
     background-position: center;
   } 
 
@@ -254,15 +254,15 @@
   }
 
   .client-instructions__lesson:nth-of-type(1) a:hover ~ .client-instructions__lesson-picture {
-    background-image: url(../images/lesson-bg_750_1a.png);
+    background-image: url(../images/lesson-bg_750_1a.jpg);
   }
 
   .client-instructions__lesson:nth-of-type(2) a:hover ~ .client-instructions__lesson-picture {
-    background-image: url(../images/lesson-bg_750_2a.png);
+    background-image: url(../images/lesson-bg_750_2a.jpg);
   }
 
   .client-instructions__lesson:nth-of-type(3) a:hover ~ .client-instructions__lesson-picture {
-    background-image: url(../images/lesson-bg_750_3a.png);
+    background-image: url(../images/lesson-bg_750_3a.jpg);
   }
 
   .client-instructions__paginator-button {
@@ -407,17 +407,17 @@
   }
 
   .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
-    background-image: url(../images/lesson-bg_750_1a.png);
+    background-image: url(../images/lesson-bg_750_1a.jpg);
     background-position: center;
   }
 
   .client-instructions__lesson:nth-of-type(2) .client-instructions__lesson-picture { 
-    background-image: url(../images/lesson-bg_750_2a.png);
+    background-image: url(../images/lesson-bg_750_2a.jpg);
     background-position: center;
   }
 
   .client-instructions__lesson:nth-of-type(3) .client-instructions__lesson-picture { 
-    background-image: url(../images/lesson-bg_750_3a.png);
+    background-image: url(../images/lesson-bg_750_3a.jpg);
     background-position: center;
   }
 
