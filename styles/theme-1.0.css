@@ -3736,10 +3736,6 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     background-position: -321px -165px
 }
 
-.bar {
-    background: #02903d!important
-}
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-resolution:144dpi) {
     .chosen-container .chosen-results-scroll-down span,.chosen-container .chosen-results-scroll-up span,.chosen-container-multi .chosen-choices .search-choice .search-choice-close,.chosen-container-single .chosen-single abbr,.chosen-container-single .chosen-single div b {
         background-image:url(/themes/default/default/images/ui/chosen-sprite@2x.png)!important;
@@ -3924,15 +3920,6 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     .profile-cart .b-profile-info__characters-list:first-of-type {
         border-top: 1px solid #ccc
     }
-
-    .b-item__popover {
-        -webkit-box-shadow: none;
-        box-shadow: none
-    }
-
-    .b-item__popover:after,.b-item__popover:before {
-        display: none
-    }
 }
 
 .icon-user {
@@ -3944,11 +3931,30 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     background-position: -264px -28px
 }
 
+.bar {
+    background: #02903d!important
+}
+
 .back-to-top {
     color: #000;
     font-size: 13px;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 1%;
+    z-index: 50;
+    text-decoration: none
+}
+
+.back-to-top:after {
+    width: 24px;
+    height: 13px;
+    content: "\21e7";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px
 }
 
 ::-webkit-scrollbar {
@@ -3987,5 +3993,16 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
 @media only screen and (max-width: 800px) {
     .b-search {
         border-right:0 solid #ffa800
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .b-item__popover {
+        -webkit-box-shadow:none;
+        box-shadow: none
+    }
+
+    .b-item__popover:after,.b-item__popover:before {
+        display: none
     }
 }
