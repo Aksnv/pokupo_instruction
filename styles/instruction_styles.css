@@ -20,7 +20,7 @@
 
 .page-header {
   height: 120px;
-  margin-bottom: 113px;
+  margin-bottom: 101px;
 }
 
 .page-header__column {
@@ -28,7 +28,7 @@
 }
 
 .page-header__column--logo {
-  margin-right: 29px;
+  margin-right: 25px;
 }
 
 .page-header__column--logo a {
@@ -47,7 +47,7 @@
 
 .page-header__column--menu {
   position: relative;
-  margin-right: 25px;
+  margin-right: 27px;
 }
 
 .page-header__column--menu-link,
@@ -57,11 +57,12 @@
 
 .page-header__column--menu-link a {
   display: block;
-  height: 117px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 120px;
+  padding-top: 57px;
+  padding-left: 12px;
+  padding-right: 12px;
   font-size: 16px;
-  line-height: 126px;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -100,13 +101,11 @@
 .page-header__column--submenu-link a {
   height: 60px;
   font-size: 14px;
-  line-height: 58px;
-  padding: 0;
+  line-height: 60px;
+  padding: 0 16px;
 }
 
 .page-header__column--submenu-link span {
-  margin-left: 14px;
-  margin-right: 14px;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -191,10 +190,12 @@
 }
 
 .header-icon--registration {
+  font-size: 13px;
   font-weight: 600;
   line-height: 39px;
   text-transform: uppercase;
-  padding-left: 56px;
+  text-decoration: none;
+  padding-left: 25px;
   color: #000000;
 }
 
@@ -215,14 +216,14 @@
 
 .client-instructions__header h1 {
   font-size: 45px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
-  padding-right: 11px;
-  padding-bottom: 47px;
+  padding-bottom: 34px;
 }
 
 .client-instructions__lesson {
   position: relative;
+  text-align: left;
 }
 
 .client-instructions__lesson-picture {
@@ -243,8 +244,8 @@
 
 .client-instructions__lesson-picture h4 {
   font-size: 45px;
-  font-weight: 100;
-  padding-bottom: 11px;
+  font-weight: 300;
+  padding-bottom: 16px;
 }
 
 .client-instructions__lesson-picture p {
@@ -274,13 +275,13 @@
   height: 46px;
   background-color: #ffa800;
   border-radius: 23px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 46px;
   text-transform: uppercase;
 }
 
 .client-instructions__lesson-link span {
-  margin-left: 77px;
+  margin-left: 78px;
 }
 
 .client-instructions__lesson-link span::before {
@@ -310,16 +311,17 @@
   width: 639px;
   padding-left: 41px;
   padding-top: 173px;
-  padding-bottom: 35px;
+  padding-bottom: 33px;
 }
 
 .client-instructions__lesson-article header {
-  margin-bottom: 12px;
-  font-size: 18px;
+  margin-bottom: 16px;
+  font-size: 17px;
 }
 
 .client-instructions__lesson-article a {
   font-weight: 800;
+  text-decoration: none;
   border-bottom: 2px solid #efece7;
   color: #000000;
 }
@@ -341,10 +343,6 @@
   background-image: url(../images/lesson-bg_active.png);
 }
 
-.client-instructions__lesson-article p {
-  padding-bottom: 20px;
-}
-
 .client-instructions__paginator {
   padding-left: 43px;
 }
@@ -352,16 +350,17 @@
 .client-instructions__paginator-button {
   float: left;
   /* display: block; */
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
   margin-bottom: 72px;
   margin-right: 11px;
   border-radius: 50%;
   border: 2px solid #ffa800;
   font-size: 12px;
   font-weight: 600;
-  line-height: 35px;
+  line-height: 39px;
   text-align: center;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -390,11 +389,15 @@
 
 .page-footer__columns {
   overflow: hidden; 
-  padding-bottom: 46px;
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  padding-bottom: 45px;
   color: #605e5c;
 }
 
 .page-footer__columns a {
+  text-decoration: none;
   color: #605e5c;
 }
 
@@ -405,7 +408,8 @@
 .page-footer__column {
   float: left;
   width: 25%;
-  margin-top: 40px;
+  margin-top: 41px;
+  padding-left: 2px;
 }
 
 .contact-icon::before {
@@ -447,6 +451,7 @@
 .page-footer__column--sm {
   float: right;
   margin-top: 50px;
+  padding-left: 0;
 }
 
 .social-icon {
@@ -454,7 +459,7 @@
   vertical-align: top;
   width: 35px;
   height: 35px;
-  margin-right: 2px;
+  margin-right: 1px;
   border-radius: 5px;
   background-image: url("../images/main_sprite.png");
   background-repeat: no-repeat;
@@ -519,14 +524,14 @@
   background-position: -653px -782px;
 }
 
-.page-footer__payment-system {
-  padding-left: 4px;
-}
-
 .payment-system__item {
   display: inline-block;
   vertical-align: top;
-  margin-right: 46px;
+  margin-right: 44px;
+}
+
+.payment-system__item:nth-child(1) {
+  margin-left: 5px;
 }
 
 .payment-system__item:nth-child(2) {
