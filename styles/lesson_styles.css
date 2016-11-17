@@ -1,6 +1,6 @@
 /* Main layout styles */
 
-body {
+/* body {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -13,14 +13,14 @@ body {
   position: relative;
   width: 989px;
   margin: auto;
-}
+} */
 
 
 /* ---------------  --------------- Header ---------------  --------------- */
 
 .page-header {
   height: 120px;
-  margin-bottom: 100px; 
+  margin-bottom: 101px;
 }
 
 .page-header__column {
@@ -28,7 +28,7 @@ body {
 }
 
 .page-header__column--logo {
-  margin-right: 29px;
+  margin-right: 25px;
 }
 
 .page-header__column--logo a {
@@ -47,7 +47,7 @@ body {
 
 .page-header__column--menu {
   position: relative;
-  margin-right: 25px;
+  margin-right: 27px;
 }
 
 .page-header__column--menu-link,
@@ -57,11 +57,12 @@ body {
 
 .page-header__column--menu-link a {
   display: block;
-  height: 117px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 120px;
+  padding-top: 57px;
+  padding-left: 12px;
+  padding-right: 12px;
   font-size: 16px;
-  line-height: 126px;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -100,13 +101,11 @@ body {
 .page-header__column--submenu-link a {
   height: 60px;
   font-size: 14px;
-  line-height: 58px;
-  padding: 0;
+  line-height: 60px;
+  padding: 0 16px;
 }
 
 .page-header__column--submenu-link span {
-  margin-left: 14px;
-  margin-right: 14px;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -191,10 +190,12 @@ body {
 }
 
 .header-icon--registration {
+  font-size: 13px;
   font-weight: 600;
-  line-height: 39px;
+  line-height: 42px;
   text-transform: uppercase;
-  padding-left: 56px;
+  text-decoration: none;
+  padding-left: 25px;
   color: #000000;
 }
 
@@ -213,6 +214,10 @@ body {
 
 /* -------------  ------------- Main content -------------  ------------- */
 
+.client-lesson {
+  text-align: left;
+}
+
 .client-lesson__button-back {
   position: relative;
   margin-left: 50px;
@@ -220,14 +225,15 @@ body {
 
 .client-lesson__button-back a {
   display: inline-block;
-  width: 122px;
-  height: 36px;
+  width: 165px;
+  height: 38px;
   border: 2px solid #ffa800;
   border-radius: 30px;
   font-size: 12px;
   font-weight: 600;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
   padding-left: 39px;
   color: #ffa800;
 }
@@ -268,7 +274,7 @@ body {
 
 .client-lesson__header h1 {
   padding-left: 49px;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 17px;
 }
 
@@ -290,30 +296,32 @@ body {
 .client-lesson__presentation-article {
   width: 334px;
   padding-left: 34px;
-  padding-top: 13px;
+  padding-top: 14px;
+  padding-right: 10px;
 }
 
 .client-lesson__presentation-article h2 {
-  padding-bottom: 12px;
+  padding-bottom: 14px;
 }
 
 .client-lesson__presentation-download {
   position: relative;
   margin-top: 84px;
   margin-left: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .client-lesson__presentation-download a {
   display: inline-block;
-  width: 167px;
-  height: 36px;
+  width: 217px;
+  height: 38px;
   border: 2px solid #ffa800;
   border-radius: 30px;
   font-size: 12px;
   font-weight: 600;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
   padding-left: 45px;
   color: #000000;
 }
@@ -382,16 +390,12 @@ body {
 }
 
 .instruction-content__block h3 {
-  padding-top: 18px;
-  padding-bottom: 23px;
+  padding-top: 21px;
+  padding-bottom: 5px;
 }
 
 .instruction-content__block:first-child h3 {
   padding-top: 32px;
-}
-
-.instruction-content__block p {
-  padding-bottom: 20px;
 }
 
 .instruction-content__block-picture {
@@ -399,7 +403,8 @@ body {
 }
 
 .instruction-content__block-picture img {
-  padding-top: 5px;
+  width: 647px;
+  padding-top: 3px;
 }
 
 .instruction-content__block-picture::after {
@@ -417,12 +422,14 @@ body {
 
 .instruction-content__block-picture::after,
 .instruction-content__block-picture p {
+  font-size: 13px;
+  font-weight: 400;
   font-style: italic;
-  font-weight: 600;
+  line-height: 20px;  
 }
 
 .instruction-content__block:last-child {
-  padding-bottom: 44px;
+  padding-bottom: 47px;
 }
 
 .client-lesson__sm-links {
@@ -450,11 +457,15 @@ body {
 
 .page-footer__columns {
   overflow: hidden; 
-  padding-bottom: 46px;
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  padding-bottom: 45px;
   color: #605e5c;
 }
 
 .page-footer__columns a {
+  text-decoration: none;
   color: #605e5c;
 }
 
@@ -465,7 +476,8 @@ body {
 .page-footer__column {
   float: left;
   width: 25%;
-  margin-top: 40px;
+  margin-top: 41px;
+  padding-left: 2px;
 }
 
 .contact-icon::before {
@@ -507,6 +519,7 @@ body {
 .page-footer__column--sm {
   float: right;
   margin-top: 50px;
+  padding-left: 0;
 }
 
 .social-icon {
@@ -514,7 +527,7 @@ body {
   vertical-align: top;
   width: 35px;
   height: 35px;
-  margin-right: 2px;
+  margin-right: 1px;
   border-radius: 5px;
   background-image: url("../images/main_sprite.png");
   background-repeat: no-repeat;
@@ -579,14 +592,14 @@ body {
   background-position: -653px -782px;
 }
 
-.page-footer__payment-system {
-  padding-left: 4px;
-}
-
 .payment-system__item {
   display: inline-block;
   vertical-align: top;
-  margin-right: 46px;
+  margin-right: 44px;
+}
+
+.payment-system__item:nth-child(1) {
+  margin-left: 5px;
 }
 
 .payment-system__item:nth-child(2) {
