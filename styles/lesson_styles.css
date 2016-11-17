@@ -226,7 +226,7 @@
 .client-lesson__button-back a {
   display: inline-block;
   width: 165px;
-  height: 38px;
+  height: 40px;
   border: 2px solid #ffa800;
   border-radius: 30px;
   font-size: 12px;
@@ -314,7 +314,7 @@
 .client-lesson__presentation-download a {
   display: inline-block;
   width: 217px;
-  height: 38px;
+  height: 40px;
   border: 2px solid #ffa800;
   border-radius: 30px;
   font-size: 12px;

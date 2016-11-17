@@ -259,7 +259,7 @@
   .client-lesson__presentation-article {
     width: auto;
     padding-left: 0;
-    padding-top: 18px;
+    padding-top: 23px;
   }
 
   .client-lesson__presentation-download {
@@ -286,6 +286,10 @@
     padding-left: 40px;
   }
 
+  .instruction-content__block h3 {
+    padding-top: 13px;
+  }
+
   .instruction-content__block:first-child h3 {
     padding-top: 33px;
   }
@@ -296,7 +300,7 @@
 
   .instruction-content__block-picture p {
     display: block;
-    padding-top: 9px;
+    padding-top: 13px;
     padding-left: 2px;
   }
 
