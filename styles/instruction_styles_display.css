@@ -51,6 +51,10 @@
     display: none;
   }
 
+  .page-header__column--menu-link a {
+    padding-top: 0;
+  }
+
   /* Выпадающее меню */
 
   .page-header__column--menu-hamburger:hover {
@@ -82,11 +86,13 @@
 
   .page-header__column--menu-hamburger:hover + .page-header__column--menu::after {
     position: absolute;
+    left: 0;
     bottom: 0;
     content: '';
     /* display: block; */
     width: 98%;
     height: 10px;
+    text-align: left;
     margin-left: 1%;
     box-shadow: 0 2px 10px #b7b4b1;
     z-index: -1;
@@ -118,6 +124,7 @@
 
   .page-header__column--menu-hamburger:hover + .page-header__column--menu .page-header__column--menu-link span {
     display: block;
+    text-align: center;
     padding-left: 28px;
     border-bottom: none;
     transition: none;
