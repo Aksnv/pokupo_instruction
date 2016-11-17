@@ -403,7 +403,7 @@
 }
 
 .instruction-content__block-picture img {
-  width: 647px;
+  max-width: 100%;
   padding-top: 3px;
 }
 
