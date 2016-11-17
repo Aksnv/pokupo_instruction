@@ -413,6 +413,10 @@
 
   /* -------------  Main content  ------------- */
 
+  .client-instructions__header h1 {
+    padding-left: 8px;
+  }
+
   .client-instructions__lesson-picture {
     width: 360px;
   }
@@ -435,6 +439,11 @@
   .client-instructions__lesson-article {
     width: 335px;
     padding-left: 29px;
+  }
+
+  .client-instructions__lesson-article header {
+    line-height: 18px;
+    margin-bottom: 13px;
   }
 
   .client-instructions__lesson:last-of-type .client-instructions__lesson-article {
@@ -464,11 +473,12 @@
 
   /* --------------- Footer --------------- */
 
-  .page-footer {
+  /* .page-footer {
     text-align: center;
-  }
+  } */
 
   .page-footer__columns {
+    text-align: center;
     padding-bottom: 30px;
   }
 
@@ -507,7 +517,8 @@
   }
 
   .page-footer__payment-system {
-    padding-left: 17px;
+    text-align: center;
+    padding-left: 25px;
     padding-bottom: 10px;
   }
 
@@ -519,10 +530,10 @@
   .payment-system__item:nth-child(6),
   .payment-system__item:nth-child(7),
   .payment-system__item:nth-child(8) {
-    padding-top: 5px;
+    padding-top: 7px;
   }
 
   .payment-system__item:nth-child(9) {
-    margin-top: -5px;
+    margin-top: -2px;
   }
 }
