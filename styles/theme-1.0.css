@@ -4006,3 +4006,755 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
         display: none
     }
 }
+
+
+/* Стили для основного контента страницы Курс обучения */
+
+/* Main layout styles */
+
+/* -------------  Main content  ------------- */
+
+.client-instructions__header h1 {
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.client-instructions__lesson {
+  position: relative;
+  text-align: left;
+}
+
+.client-instructions__lesson-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 978px;
+  height: 160px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-top: 44px;
+  padding-left: 299px;
+  background-image: url(../images/lesson-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.client-instructions__lesson-picture h4 {
+  font-size: 45px;
+  font-weight: 300;
+  padding-bottom: 16px;
+}
+
+.client-instructions__lesson-picture p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.client-instructions__lesson-picture:hover {
+  background-image: url(../images/lesson-bg_hover.png);
+}
+
+.client-instructions__lesson-picture:hover .client-instructions__lesson-link {
+  visibility: visible;
+}
+
+.client-instructions__lesson-picture:hover h4,
+.client-instructions__lesson-picture:hover p {
+  opacity: 0.5;
+}
+
+.client-instructions__lesson-link {
+  visibility: hidden; 
+  position: absolute;
+  top: 57px;
+  left: 370px;
+  width: 240px;
+  height: 46px;
+  background-color: #ffa800;
+  border-radius: 23px;
+  font-size: 12px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.client-instructions__lesson-link span {
+  margin-left: 78px;
+}
+
+.client-instructions__lesson-link span::before {
+  position: absolute;
+  top: 8px;
+  left: 46px;
+  content: '';
+  /* display: block; */
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.client-instructions__lesson-link span::after {
+  position: absolute;
+  top: 15px;
+  left: 56px;
+  content: '';
+  /* display: block; */
+  border: 7px solid transparent;
+  border-left-width: 11px;
+  border-left-color: #000000;
+}
+
+.client-instructions__lesson-article {
+  width: 639px;
+  padding-left: 41px;
+  padding-top: 173px;
+  padding-bottom: 33px;
+}
+
+.client-instructions__lesson-article header {
+  margin-bottom: 16px;
+  font-size: 17px;
+}
+
+.client-instructions__lesson-article a {
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid #efece7;
+  color: #000000;
+}
+
+.client-instructions__lesson-article a:hover {
+  color: #ed1c24;
+}
+
+.client-instructions__lesson-picture a {
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.client-instructions__lesson-picture a:hover {
+  color: #000000;
+}
+
+.client-instructions__lesson-article a:hover ~ .client-instructions__lesson-picture {
+  background-image: url(../images/lesson-bg_active.png);
+}
+
+.client-instructions__paginator {
+  padding-left: 43px;
+}
+
+.client-instructions__paginator-button {
+  float: left;
+  /* display: block; */
+  width: 39px;
+  height: 39px;
+  margin-bottom: 72px;
+  margin-right: 11px;
+  border-radius: 50%;
+  border: 2px solid #ffa800;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 39px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.client-instructions__paginator-button:hover,
+.client-instructions__paginator-button--active {
+  background-color: #ffa800;
+}
+
+.client-instructions__paginator-button--dotted {
+  width: 19px;
+  line-height: 40px;
+  border: none;
+}
+
+.client-instructions__paginator-button--dotted:hover {
+  background-color: #ffffff;
+}
+
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    position: static;
+    /* max-width: 750px; */
+    width: 730px;
+  }
+
+  /* -------------  Main content  ------------- */
+
+  .client-instructions__header h1 {
+    padding-right: 0;
+    padding-left: 24px;
+    padding-bottom: 35px;
+  }
+
+  .client-instructions__lesson-picture {
+    width: 730px;
+    transition: none;
+  }
+
+  .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_1a.jpg);
+    background-position: center;
+  }
+
+  .client-instructions__lesson:nth-of-type(2) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_2a.jpg);
+    background-position: center;
+  }
+
+  .client-instructions__lesson:nth-of-type(3) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_3a.jpg);
+    background-position: center;
+  } 
+
+  .client-instructions__lesson-picture h4,
+  .client-instructions__lesson-picture p,
+  .client-instructions__lesson-link {
+    display: none;
+  }
+
+  .client-instructions__lesson:nth-of-type(1) a:hover ~ .client-instructions__lesson-picture {
+    background-image: url(../images/lesson-bg_750_1a.jpg);
+  }
+
+  .client-instructions__lesson:nth-of-type(2) a:hover ~ .client-instructions__lesson-picture {
+    background-image: url(../images/lesson-bg_750_2a.jpg);
+  }
+
+  .client-instructions__lesson:nth-of-type(3) a:hover ~ .client-instructions__lesson-picture {
+    background-image: url(../images/lesson-bg_750_3a.jpg);
+  }
+
+  .client-instructions__paginator-button {
+    margin-bottom: 70px;
+  }
+}
+
+  
+@media screen and (max-width: 749px) {
+
+  .container {
+    /* position: static; */ 
+    /* max-width: 360px;
+    min-width: 360px; */
+    width: 360px;
+  }
+
+  /* -------------  Main content  ------------- */
+
+  .client-instructions__header h1 {
+    padding-left: 8px;
+  }
+
+  .client-instructions__lesson-picture {
+    width: 360px;
+  }
+
+  .client-instructions__lesson:nth-of-type(1) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_1a.jpg);
+    background-position: center;
+  }
+
+  .client-instructions__lesson:nth-of-type(2) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_2a.jpg);
+    background-position: center;
+  }
+
+  .client-instructions__lesson:nth-of-type(3) .client-instructions__lesson-picture { 
+    background-image: url(../images/lesson-bg_750_3a.jpg);
+    background-position: center;
+  }
+
+  .client-instructions__lesson-article {
+    width: 335px;
+    padding-left: 29px;
+  }
+
+  .client-instructions__lesson-article header {
+    line-height: 18px;
+    margin-bottom: 13px;
+  }
+
+  .client-instructions__lesson:last-of-type .client-instructions__lesson-article {
+    padding-bottom: 16px;
+  }
+
+  .client-instructions__paginator {
+    padding-left: 60px;
+  }
+
+  .client-instructions__paginator-button {
+    margin-bottom: 40px;
+  }
+
+  .client-instructions__paginator-button--active {
+    margin-right: 20px;
+  }
+
+  .client-instructions__paginator-button:nth-child(4),
+  .client-instructions__paginator-button:nth-child(5) {
+    display: none;
+  }
+
+  .client-instructions__paginator-button--dotted {
+    margin-right: 22px;
+  }
+}
+
+/* END - Стили для основного контента страницы Курс обучения */
+
+
+/* Стили для основного контента страницы Просмотр урока */
+
+/* Main layout styles */
+
+/* ------------- Main content ------------- */
+
+.client-lesson {
+  text-align: left;
+}
+
+.client-lesson__button-back {
+  position: relative;
+  margin-left: 50px;
+}
+
+.client-lesson__button-back a {
+  display: inline-block;
+  width: 165px;
+  height: 40px;
+  border: 2px solid #ffa800;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 39px;
+  color: #ffa800;
+}
+
+.client-lesson__button-back a:hover {
+  border: 2px solid #CC8600;
+  color: #CC8600;
+}
+
+.client-lesson__button-back a::before {
+  position: absolute;
+  left: 16px;
+  top: 11px;
+  content: '';
+  /* display: block; */
+  width: 20px;
+  height: 15px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -832px -392px;
+}
+
+.client-lesson__button-back a:hover::before {
+  background-position: -810px -392px;
+}
+
+.client-lesson__button-back:last-child {
+  margin-bottom: 68px;
+}
+
+.client-lesson__header h1,
+.client-lesson__presentation-article h2,
+.client-lesson__instruction h2,
+.instruction-content__block h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.client-lesson__header h1 {
+  padding-left: 49px;
+  padding-top: 25px;
+  padding-bottom: 17px;
+}
+
+.client-lesson__video {
+  margin-bottom: 35px;
+}
+
+.client-lesson__video video {
+  width: 978px; 
+  height: 550px;
+  border-top: 1px solid #ffffff;
+}
+
+.client-lesson__presentation-picture,
+.client-lesson__presentation-article {
+  float: left;
+}
+
+.client-lesson__presentation-article {
+  width: 334px;
+  padding-left: 34px;
+  padding-top: 14px;
+  padding-right: 10px;
+}
+
+.client-lesson__presentation-article h2 {
+  padding-bottom: 14px;
+}
+
+.client-lesson__presentation-download {
+  position: relative;
+  margin-top: 84px;
+  margin-left: 1px;
+  margin-bottom: 33px;
+}
+
+.client-lesson__presentation-download a {
+  display: inline-block;
+  width: 217px;
+  height: 40px;
+  border: 2px solid #ffa800;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 45px;
+  color: #000000;
+}
+
+.client-lesson__presentation-download a:hover {
+  background-color: #ffa800;
+}
+
+.client-lesson__presentation-download a::before {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  content: '';
+  /* display: block; */
+  width: 20px;
+  height: 15px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -859px -844px;
+} 
+
+.client-lesson__instruction {
+  clear: both;
+}
+
+.client-lesson__instruction h2 {
+  padding-top: 12px;
+  padding-left: 49px;
+  padding-bottom: 18px;
+}
+
+.instruction-content {
+  position: relative;
+  width: 978px;
+  background-color: #efece7;
+}
+
+.instruction-content::before,
+.instruction-content::after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.instruction-content::before {
+  top: 0;
+  right: 0;
+  border: 15px solid transparent;
+  border-right-color: #ffffff;
+  border-top-color: #ffffff;
+  border-left-color: #faf9f8;
+  border-bottom-color: #faf9f8;
+}
+
+.instruction-content::after {
+  top: 8px;
+  right: -20px;
+  border: 21px solid transparent;
+  border-left-color: #e3e0db;
+  transform: rotate(-45deg); 
+}
+
+.instruction-content__block {
+  width: 696px;
+  padding-left: 49px;
+}
+
+.instruction-content__block h3 {
+  padding-top: 21px;
+  padding-bottom: 5px;
+}
+
+.instruction-content__block:first-child h3 {
+  padding-top: 32px;
+}
+
+.instruction-content__block-picture {
+  position: relative;
+}
+
+.instruction-content__block-picture img {
+  max-width: 100%;
+  padding-top: 3px;
+}
+
+.instruction-content__block-picture::after {
+  position: absolute;
+  top: 20px;
+  right: -250px;
+  content: 'Для начала работы с сервисом нужно пройти простую процедуру регистрации.';
+  display: block;
+  width: 230px;
+}
+
+.instruction-content__block-picture p {
+  display: none;
+}
+
+.instruction-content__block-picture::after,
+.instruction-content__block-picture p {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 20px;  
+}
+
+.instruction-content__block:last-child {
+  padding-bottom: 47px;
+}
+
+.client-lesson__sm-links {
+  width: 252px;
+  height: 40px;
+  background-image: url(../images/pages/lesson/sm-buttons.png);
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-left: 51px;
+  margin-bottom: 40px;
+}
+
+.client-lesson__sm-links:hover {
+  cursor: pointer;
+}
+
+
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    position: static;
+    /* max-width: 750px; */
+    width: 730px;
+  }
+
+  /* -------------  Main content  ------------- */
+
+  .client-lesson__button-back {
+    margin-left: 42px;
+  }
+
+  .client-lesson__button-back:last-child {
+    margin-bottom: 60px;
+  }
+
+  .client-lesson__header h1 {
+    padding-left: 41px;
+  }
+
+  .client-lesson__video video {
+    width: 750px; 
+    height: 422px;
+  }
+
+  .client-lesson__presentation {
+    margin-left: 42px;
+  }
+
+  .client-lesson__presentation-picture,
+  .client-lesson__presentation-article {
+    float: none;
+  }
+
+  .client-lesson__presentation-article {
+    width: auto;
+    padding-left: 0;
+    padding-top: 23px;
+  }
+
+  .client-lesson__presentation-download {
+    margin-top: 25px;
+  }
+
+  .client-lesson__instruction h2 {
+    padding-top: 13px;
+    padding-left: 40px;
+    padding-bottom: 17px;
+  }
+
+  .instruction-content {
+    width: 730px;
+  }
+
+  .instruction-content::before,
+  .instruction-content::after {
+    display: none;
+  }
+
+  .instruction-content__block {
+    width: 686px;
+    padding-left: 40px;
+  }
+
+  .instruction-content__block h3 {
+    padding-top: 13px;
+  }
+
+  .instruction-content__block:first-child h3 {
+    padding-top: 33px;
+  }
+
+  .instruction-content__block-picture::after {
+    display: none;
+  }
+
+  .instruction-content__block-picture p {
+    display: block;
+    padding-top: 13px;
+    padding-left: 2px;
+  }
+
+  .instruction-content__block:last-child {
+    padding-bottom: 25px;
+  }
+
+  .client-lesson__sm-links {
+    margin-left: 42px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+
+  .container {
+    /* position: static; */ 
+    /* max-width: 360px;
+    min-width: 360px; */
+    width: 360px;
+  }
+
+  /* -------------  Main content  ------------- */
+
+  .client-lesson__button-back {
+    margin-left: 29px;
+  }
+
+  .client-lesson__button-back:last-child {
+    margin-bottom: 50px;
+  }
+
+  .client-lesson__button-back a {
+    width: 300px;
+    padding-left: 97px;
+  }
+
+  .client-lesson__button-back a::before {
+    left: 73px;
+  }
+
+  .client-lesson__header h1 {
+    padding-left: 28px;
+    padding-right: 25px;
+    line-height: 19px;
+  }
+
+  .client-lesson__video {
+    margin-bottom: 35px;
+  }
+
+  .client-lesson__video video {
+    width: 360px; 
+    height: 203px;
+  }
+
+  .client-lesson__presentation {
+    margin-left: -2px;
+  }
+
+  .client-lesson__presentation-picture img {
+    max-width: 100%;
+  }
+
+  .client-lesson__presentation-article {
+    width: 330px;
+    padding-left: 30px;
+  }
+
+  .client-lesson__presentation-download {
+    margin-bottom: 30px;
+  }
+
+  .client-lesson__presentation-download a {
+    width: 300px;
+    padding-left: 87px;
+  }
+
+  .client-lesson__presentation-download a::before {
+    left: 61px;
+  } 
+
+  .client-lesson__instruction h2 {
+    padding-left: 28px;
+  }
+
+  .instruction-content {
+    width: 360px;
+    margin-left: -2px;
+  }
+
+  .instruction-content__block {
+    width: 360px;
+    padding-left: 31px;
+    padding-right: 24px;
+  }
+
+  .instruction-content__block:first-child h3 {
+    padding-top: 16px;
+  }
+
+  .instruction-content__block:first-child h3 {
+    padding-top: 33px;
+  }
+
+  .instruction-content__block-picture {
+    width: 300px;
+  }
+
+  .instruction-content__block-picture img {
+    max-width: 100%;
+  }
+
+  .instruction-content__block:last-child {
+    padding-bottom: 23px;
+  }
+
+  .client-lesson__sm-links {
+    margin-left: 53px;
+  }
+}
+
+/* END - Стили для основного контента страницы Просмотр урока */

@@ -1,12 +1,5 @@
-/* Diffrent display layout styles */
 
 @media screen and (max-width: 1024px) {
-
-  .container {
-    position: static;
-    /* max-width: 750px; */
-    width: 730px;
-  }
 
   /* ---------------  Header --------------- */
 
@@ -228,89 +221,6 @@
     margin-right: 25px;
   }
 
-  /* -------------  Main content  ------------- */
-
-  .client-lesson__button-back {
-    margin-left: 42px;
-  }
-
-  .client-lesson__button-back:last-child {
-    margin-bottom: 60px;
-  }
-
-  .client-lesson__header h1 {
-    padding-left: 41px;
-  }
-
-  .client-lesson__video video {
-    width: 750px; 
-    height: 422px;
-  }
-
-  .client-lesson__presentation {
-    margin-left: 42px;
-  }
-
-  .client-lesson__presentation-picture,
-  .client-lesson__presentation-article {
-    float: none;
-  }
-
-  .client-lesson__presentation-article {
-    width: auto;
-    padding-left: 0;
-    padding-top: 23px;
-  }
-
-  .client-lesson__presentation-download {
-    margin-top: 25px;
-  }
-
-  .client-lesson__instruction h2 {
-    padding-top: 13px;
-    padding-left: 40px;
-    padding-bottom: 17px;
-  }
-
-  .instruction-content {
-    width: 730px;
-  }
-
-  .instruction-content::before,
-  .instruction-content::after {
-    display: none;
-  }
-
-  .instruction-content__block {
-    width: 686px;
-    padding-left: 40px;
-  }
-
-  .instruction-content__block h3 {
-    padding-top: 13px;
-  }
-
-  .instruction-content__block:first-child h3 {
-    padding-top: 33px;
-  }
-
-  .instruction-content__block-picture::after {
-    display: none;
-  }
-
-  .instruction-content__block-picture p {
-    display: block;
-    padding-top: 13px;
-    padding-left: 2px;
-  }
-
-  .instruction-content__block:last-child {
-    padding-bottom: 25px;
-  }
-
-  .client-lesson__sm-links {
-    margin-left: 42px;
-  }
 
   /* --------------- Footer --------------- */
 
@@ -372,18 +282,7 @@
 
 @media screen and (max-width: 749px) {
 
-  .container {
-    /* position: static; */ 
-    /* max-width: 360px;
-    min-width: 360px; */
-    width: 360px;
-  }
-
   /* ---------------  Header --------------- */
-
-  .page-header {
-    margin-bottom: 20px;
-  }
 
   .page-header__column--logo {
     margin-right: 28px;
@@ -456,105 +355,7 @@
     left: 7px;
   }
 
-  /* -------------  Main content  ------------- */
-
-  .client-lesson__button-back {
-    margin-left: 29px;
-  }
-
-  .client-lesson__button-back:last-child {
-    margin-bottom: 50px;
-  }
-
-  .client-lesson__button-back a {
-    width: 300px;
-    padding-left: 97px;
-  }
-
-  .client-lesson__button-back a::before {
-    left: 73px;
-  }
-
-  .client-lesson__header h1 {
-    padding-left: 28px;
-    padding-right: 25px;
-    line-height: 19px;
-  }
-
-  .client-lesson__video {
-    margin-bottom: 35px;
-  }
-
-  .client-lesson__video video {
-    width: 360px; 
-    height: 203px;
-  }
-
-  .client-lesson__presentation {
-    margin-left: -2px;
-  }
-
-  .client-lesson__presentation-picture img {
-    max-width: 100%;
-  }
-
-  .client-lesson__presentation-article {
-    width: 330px;
-    padding-left: 30px;
-  }
-
-  .client-lesson__presentation-download {
-    margin-bottom: 30px;
-  }
-
-  .client-lesson__presentation-download a {
-    width: 300px;
-    padding-left: 87px;
-  }
-
-  .client-lesson__presentation-download a::before {
-    left: 61px;
-  } 
-
-  .client-lesson__instruction h2 {
-    padding-left: 28px;
-  }
-
-  .instruction-content {
-    width: 360px;
-    margin-left: -2px;
-  }
-
-  .instruction-content__block {
-    width: 360px;
-    padding-left: 31px;
-    padding-right: 24px;
-  }
-
-  .instruction-content__block:first-child h3 {
-    padding-top: 16px;
-  }
-
-  .instruction-content__block:first-child h3 {
-    padding-top: 33px;
-  }
-
-  .instruction-content__block-picture {
-    width: 300px;
-  }
-
-  .instruction-content__block-picture img {
-    max-width: 100%;
-  }
-
-  .instruction-content__block:last-child {
-    padding-bottom: 23px;
-  }
-
-  .client-lesson__sm-links {
-    margin-left: 53px;
-  }
-
+  
   /* --------------- Footer --------------- */
 
   .page-footer__columns {
