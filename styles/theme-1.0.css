@@ -4758,3 +4758,260 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
 }
 
 /* END - Стили для основного контента страницы Просмотр урока */
+
+/* Стили для основного контента страницы Отзывы клиентов */
+
+/* Main layout styles */
+
+/* ------------- Main content ------------- */
+
+.client-reviews__header {
+  width: 545px;
+  /* max-width: 560px; */
+  /* min-width: 370px; */
+  margin: auto;
+  padding-bottom: 84px;
+  text-align: center;
+}
+
+.client-reviews__header::before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 185px;
+  height: 93px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -101px -851px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.client-reviews__header h1 {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+
+.client-review {
+  display: table;
+  position: relative;
+  width: 788px;
+  height: 257px;
+  /* min-height: 257px; */
+  background-color: #efece7;
+  border-radius: 20px;
+  margin-bottom: 90px;
+  padding: 53px;
+  padding-right: 85px;
+  padding-bottom: 22px;
+  text-align: left;
+}
+
+.client-review:last-child {
+  margin-bottom: 105px;
+}
+
+.client-review:nth-child(even) {
+  float: left;
+}
+
+.client-review:nth-child(odd) {
+  float: right;
+}
+
+.client-review::before {
+  position: absolute;
+  content: '';
+  /* display: block; */
+  width: 160px;
+  height: 160px;
+}
+
+.client-review:nth-child(even)::before {
+  left: 819px;
+  top: -61px;
+}
+
+.client-review:nth-child(odd)::before {
+  left: -189px;
+  top: -60px;
+}
+
+.client-review--1::before {
+  background-image: url(../images/logo/shl_logo.png);
+}
+
+.client-review--2::before {
+  background-image: url(../images/logo/boy.png);
+}
+
+/* .client-review--3::before {
+  background-image: url(../images/logo/bruco_logo.png);
+}
+
+.client-review--4::before {
+  background-image: url(../images/logo/club_logo.png);
+} */
+
+.client-review::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat; 
+}
+
+.client-review:nth-child(even)::after {
+  left: 787px;
+  top: 105px;
+  width: 115px;
+  height: 103px;
+  background-position: -425px -847px;
+}
+
+.client-review:nth-child(odd)::after {
+  left: -113px;
+  top: 109px;
+  width: 114px;
+  height: 97px;
+  background-position: -299px -850px;
+}
+
+.client-review__article {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.client-review__article-header h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.article-header__link {
+  font-style: italic;
+  text-decoration: underline;
+  color: #177a93;
+}
+
+.client-review__article p {
+   margin-top: 21px;
+}
+
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    position: static;
+    /* max-width: 750px; */
+    width: 750px;
+  }
+
+  .client-reviews__header {
+    padding-bottom: 64px;
+  }
+
+  .client-review {
+    /* max-width: 670px; */
+    width: 670px;
+    padding-left: 51px;
+    padding-right: 75px;
+    padding-bottom: 24px;
+  }
+
+  .client-review:nth-child(even),
+  .client-review:nth-child(odd) {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .client-review:last-child {
+    margin-bottom: 90px;
+  }
+
+  .client-review::before {
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+  }
+
+  .client-review:nth-child(even)::before,
+  .client-review:nth-child(odd)::before {
+    left: 50px;
+    top: 40px;
+  }
+
+  .client-review--1::before {
+    background-image: url(../images/logo/shl_logo-sm.png);
+  }
+
+  .client-review--2::before {
+    background-image: url(../images/logo/boy_sm.png);
+  }
+
+  /* .client-review--3::before {
+    background-image: url(../images/logo/bruco_logo-sm.png);
+  }
+  
+  .client-review--4::before {
+    background-image: url(../images/logo/club_logo-sm.png);
+  } */
+
+  .client-review:nth-child(even)::after,
+  .client-review:nth-child(odd)::after {
+    display: none;
+  }
+
+  .client-review__article-header {
+    min-height: 82px;
+    padding-left: 119px;
+    padding-top: 20px;
+  }
+
+@media screen and (max-width: 749px) {
+
+  .container {
+    /* position: static; */ 
+    /* max-width: 360px;
+    min-width: 360px; */
+    width: 360px;
+  }
+
+  .client-reviews__header {
+    width: 340px;
+    padding-bottom: 35px;
+  }
+
+  .client-reviews__header p {
+    padding: 0 21px;
+  }
+
+  .client-review {
+    /* max-width: 340px; */
+    width: 340px;
+    padding-top: 24px;
+    padding-left: 21px;
+    padding-right: 18px;
+  }
+
+  .client-review:last-child {
+    margin-bottom: 50px;
+  }
+
+  .client-review:nth-child(even)::before,
+  .client-review:nth-child(odd)::before {
+    left: 20px;
+    top: 20px;
+  }
+
+  .client-review__article-header {
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+    padding-left: 120px;
+    padding-bottom: 20px; 
+  }
+
+/* END - Стили для основного контента страницы Отзывы клиентов */
