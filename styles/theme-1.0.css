@@ -4520,6 +4520,25 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   padding-top: 32px;
 }
 
+.instruction-content__block ul,
+.instruction-content__block ol {
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.instruction-content__block li {
+  margin-bottom: 10px;
+}
+
+.instruction-content__block ul {
+  list-style-type: disc;
+}
+
+.instruction-content__block ol {
+  list-style-type: decimal;
+}
+
 .instruction-content__block-picture {
   position: relative;
 }
