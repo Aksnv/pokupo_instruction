@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Курс обучения</title>
+  <title>Просмотр урока</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- iOS-->
@@ -25,7 +25,7 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&subset=cyrillic" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+  <!-- <link rel="stylesheet" href="../styles/reset.css"> -->
   <link rel="stylesheet" href="../../styles/main-1.0.css">
   <link rel="stylesheet" href="../../styles/theme-1.0.css">
   <link rel="stylesheet" href="../../styles/header_footer_styles.css">
@@ -38,7 +38,7 @@
   <!-- <script src="..."></script> -->
 </head>
 <body>
-  
+
   <!-- Page header -->
   <header class="page-header">
     <div class="container">
@@ -121,7 +121,7 @@
                   </a>
                 </li>
                 <li class="page-header__column--submenu-link">
-                  <a class="page-header__column--submenu-active" href="index.html">
+                  <a class="page-header__column--submenu-active" href="../index.html">
                     <span class="link-wrapper">Курс обучения</span>
                   </a>
                 </li>
@@ -154,41 +154,68 @@
   </header>
 
   <!-- Page content -->
-  <section class="client-instructions">
+  <section class="client-lesson">
     <div class="container">
-      <div class="client-instructions__header">
-        <h1>Курс обучения</h1>
+      <div class="client-lesson__button-back">
+        <a href="../../index.html">Назад к списку</a>
       </div>
-      <section class="client-instructions__lesson">
-        <article class="client-instructions__lesson-article">
-          <header>
-            <a href="../lesson_view/lesson_view_15.html">Pokupo - Урок 15. Новая админ-панель pokupo: как открыть магазин</a>
-            <div class="client-instructions__lesson-picture">
-              <h4>Урок №15</h4>
-              <p>Новая админ-панель pokupo: как открыть магазин</p>
-              <a class="client-instructions__lesson-link" href="../lesson_view/lesson_view_15.html"><span>Перейти к уроку</span></a>
-            </div>
-          </header>
-          <p>Это видео будет полезно начинающим онлайн-предпринимателям (владельцам интрент-магазинов и прочих видов бизнеса в сети), так как с его помощью за 3-5 минут можно создать совершенно бесплатную витрину для любых товаров и услуг.</p>
-          <p>Торговая платформа pokupo позволяет сделать это без скрытых комиссий и дополнительных сборов: все тарифы <a class="inline-link" href="https://pokupo.ru/rates">https://pokupo.ru/rates</a> указаны на сайте.</p>
-          <p>Скажем больше, нет никаких промо-периодов (в 7, 14 дней и т.д.), а оплата для стартапов с оборотом до 30 000 руб. в месяц и вовсе отсутствует.</p>
-          <p>В чём наш профит?
-            <ul>
-              <li>Во-первых, в клиентской базе, так как параллельно мы развиваем проект интернет-площадки для товаров.</li>
-              <li>Во-вторых, в развитии сопутствующих услуг.</li>
-              <li>В-третьих, в абонентской плате, которая тем меньше, чем больше вы приводите нам клиентов и покупок соответственно.</li>
-            </ul>
-          </p>
-          <p>Такой подход полностью согласуется с нашими принципами и миссией (почитать можно по ссылке - <a class="inline-link" href="https://pokupo.ru/about">https://pokupo.ru/about</a>), надеемся, что и Вы найдёте в них не мало интересного и близкого себе.</p>
-        </article>
+      <div class="client-lesson__header">
+        <h1>Pokupo - Урок 1.1. Регистрация и создание интернет-магазина</h1>
+      </div>
+      <section class="client-lesson__video">
+        <video poster="../../images/pages/lessons/lesson_1.1.jpg" controls>
+          <source src="../../video/lesson_1.1.mp4" type="video/mp4">
+        </video>
       </section>
-      <div class="client-instructions__paginator">
-        <a class="client-instructions__paginator-button" href="../../index.html">1</a>
-        <a class="client-instructions__paginator-button" href="lesson_list_2.html">2</a>
-        <a class="client-instructions__paginator-button" href="lesson_list_3.html">3</a>
-        <a class="client-instructions__paginator-button" href="lesson_list_4.html">4</a>
-        <a class="client-instructions__paginator-button" href="lesson_list_5.html">5</a>
-        <a class="client-instructions__paginator-button client-instructions__paginator-button--active" href="lesson_list_6.html">6</a>
+      <!-- <section class="client-lesson__presentation">
+        <div class="client-lesson__presentation-picture">
+          <img src="../images/pages/lesson/presentation.jpg" alt="Презентация">
+        </div>
+        <div class="client-lesson__presentation-article">
+          <article>
+            <h2>Презентация</h2>
+            <p>Для всех кто хочет открыть свой Интернет магазин в сети мы предлагаем свой опыт, знания и помощь. Сегодня у нас Праздник &mdash; День рождения Pokupo! Больше года мы шли к этой дате, и вот опубликована первая версия системы, конечно, далеко не все доступно сейчас и еще многое предстоит сделать, но основной функционал торговой платформы готов. Мы очень рады представить наше творение всем интернет предпринимателям. Для всех, кто не в курсе, что такое Pokupo, добро пожаловать в раздел.</p>
+          </article>
+          <div class="client-lesson__presentation-download">
+            <a href="#">Скачать презентацию</a>
+          </div>
+        </div> 
+      </section> -->
+      <section class="client-lesson__instruction">
+        <h2>Текстовая версия урока</h2>
+        <div class="instruction-content">
+          <!-- <section class="instruction-content__block">
+            <h3>1. Создать сайт <nobr>интернет-магазина</nobr> самостоятельно: регистрация&nbsp;пользователя</h3>
+            <p>Для начала работы с сервисом нужно пройти простую процедуру регистрации. Сразу скажем, что регистрация и самостоятельное бесплатное создание интернет-магазина выполняются одновременно. То&nbsp;есть зарегистрировавшись в системе, вы сразу же получите свой первый магазин с тем названием, которое вы напишите в самом первом текстовом поле. Одновременно оно будет и вашим именем пользователя, использующимся для входа, а потому к его выбору нужно отнестись серьезнее. И,&nbsp;желательно, творчески.</p>
+            <p>Процесс регистрации предельно прост и практически ничем не отличается от подобных действий на любом другом интернет-ресурсе. На главной странице жмите на большую красивую кнопку &laquo;Создать свой магазин&raquo; и заполните все поля, которые вам предлагают. А потому особо заострять внимание на этом не будем &mdash; у вас непременно все получится.</p>
+            <div class="instruction-content__block-picture">
+              <img src="../images/pages/lesson/video.jpg" alt="Создать сайт интернет-магазина самостоятельно: регистрация пользователя">
+              <p>Для начала работы с сервисом нужно пройти простую процедуру регистрации.</p>
+            </div>
+          </section> -->
+          <section class="instruction-content__block">
+            <h3>Регистрация и создание интернет-магазина</h3>
+            <p>Регистрация и создание интернет-магазина</p>
+            <!-- <div class="instruction-content__block-picture">
+              <img src="../images/pages/lesson/presentation_2.jpg" alt="Регистрация пользователя">
+              <p>Для начала работы с сервисом нужно пройти простую процедуру регистрации.</p>
+            </div> -->
+          </section>
+        </div>
+      </section>
+
+      <div class="client-lesson__sm-links">
+        <ul>
+          <li class="social-icon social-icon--vk"><a href="https://new.vk.com/pokupo" target="_blank" title="Вконтакте">Вконтакте</a></li>
+          <li class="social-icon social-icon--tw"><a href="https://twitter.com/pokupo_ru" target="_blank" title="Твиттер">Твиттер</a></li>
+          <li class="social-icon social-icon--blog"><a href="https://pokupo.ru/blog" target="_blank" title="Блог">Блог</a></li>
+          <li class="social-icon social-icon--hh"><a href="https://habrahabr.ru/users/pokupo/" target="_blank" title="Хабрахабр">Хабрахабр</a></li>
+          <li class="social-icon social-icon--gp"><a href="https://groups.google.com/forum/#!forum/pokupo_ru" target="_blank" title="Гугл-плюс">Гугл-плюс</a></li>
+        </ul>
+      </div>
+
+      <div class="client-lesson__button-back">
+        <a href="../../index.html">Назад к списку</a>
       </div>
     </div>
   </section>
