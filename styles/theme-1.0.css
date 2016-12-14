@@ -4119,6 +4119,11 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   font-size: 17px;
 }
 
+.client-instructions__lesson-article ul {
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .client-instructions__lesson-article a {
   font-weight: 800;
   text-decoration: none;
@@ -4128,6 +4133,17 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
 
 .client-instructions__lesson-article a:hover {
   color: #ed1c24;
+}
+
+.client-instructions__lesson-article .inline-link {
+    font-weight: 400;
+    color: #177a93;
+    border-bottom: 1px solid #177a93;
+}
+
+.client-instructions__lesson-article .inline-link:hover {
+    color: #ffa800;
+    border-bottom: 1px solid #ffa800;
 }
 
 .client-instructions__lesson-picture a {
