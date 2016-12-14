@@ -4557,15 +4557,53 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
 .client-lesson__sm-links {
   width: 252px;
   height: 40px;
-  background-image: url(../images/pages/lesson/sm-buttons.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/pages/lesson/sm-buttons.png);
+  background-repeat: no-repeat; */
   margin-top: 30px;
   margin-left: 51px;
   margin-bottom: 40px;
 }
 
-.client-lesson__sm-links:hover {
-  cursor: pointer;
+.client-lesson__sm-links .social-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  margin-right: 1px;
+  border-radius: 5px;
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+}
+
+.client-lesson__sm-links .social-icon a {
+  display: block;
+  width: inherit;
+  height: inherit; 
+  color: transparent;
+}
+
+.client-lesson__sm-links .social-icon a:hover {
+  color: transparent;
+}
+
+.client-lesson__sm-links .social-icon--vk {
+  background-position: -637px -558px;
+}
+
+.client-lesson__sm-links .social-icon--tw {
+  background-position: -729px -509px;
+}
+
+.client-lesson__sm-links .social-icon--blog {
+  background-position: -729px -417px;
+}
+
+.client-lesson__sm-links .social-icon--hh {
+  background-position: -772px -648px;
+}
+
+.client-lesson__sm-links .social-icon--gp {
+  background-position: -653px -782px;
 }
 
 
