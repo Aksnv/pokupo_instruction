@@ -4018,6 +4018,7 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   font-size: 45px;
   font-weight: 300;
   text-align: center;
+  /* margin-top: 60px; */
   padding-bottom: 34px;
 }
 
@@ -4122,6 +4123,7 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
 .client-instructions__lesson-article ul {
   font-size: 13px;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .client-instructions__lesson-article a {
@@ -4313,18 +4315,18 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     margin-bottom: 40px;
   }
 
-  .client-instructions__paginator-button--active {
+  /* .client-instructions__paginator-button--active {
     margin-right: 20px;
-  }
+  } */
 
-  .client-instructions__paginator-button:nth-child(4),
+  /* .client-instructions__paginator-button:nth-child(4),
   .client-instructions__paginator-button:nth-child(5) {
     display: none;
   }
-
+  
   .client-instructions__paginator-button--dotted {
     margin-right: 22px;
-  }
+  } */
 }
 
 /* END - Стили для основного контента страницы Курс обучения */
@@ -4381,6 +4383,10 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
 .client-lesson__button-back a:hover::before {
   background-position: -810px -392px;
 }
+
+/* .client-lesson__button-back:first-child {
+  margin-top: 60px;
+} */
 
 .client-lesson__button-back:last-child {
   margin-bottom: 68px;
@@ -4525,6 +4531,7 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   font-size: 13px;
   line-height: 20px;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .instruction-content__block li {
@@ -5086,5 +5093,6 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     padding-left: 120px;
     padding-bottom: 20px; 
   }
+}
 
 /* END - Стили для основного контента страницы Отзывы клиентов */
