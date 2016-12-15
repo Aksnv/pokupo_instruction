@@ -4018,7 +4018,7 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   font-size: 45px;
   font-weight: 300;
   text-align: center;
-  /* margin-top: 60px; */
+  margin-top: 60px; 
   padding-bottom: 34px;
 }
 
@@ -4384,9 +4384,9 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   background-position: -810px -392px;
 }
 
-/* .client-lesson__button-back:first-child {
+.client-lesson__button-back:first-child {
   margin-top: 60px;
-} */
+} 
 
 .client-lesson__button-back:last-child {
   margin-bottom: 68px;
