@@ -4410,10 +4410,15 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
   margin-bottom: 35px;
 }
 
-.client-lesson__video video {
+/* .client-lesson__video video {
   width: 978px; 
   height: 550px;
   border-top: 1px solid #ffffff;
+} */
+
+.client-lesson__video iframe {
+  width: 978px; 
+  height: 550px;
 }
 
 .client-lesson__presentation-picture,
@@ -4657,7 +4662,12 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     padding-left: 41px;
   }
 
-  .client-lesson__video video {
+  /* .client-lesson__video video {
+    width: 730px; 
+    height: 422px;
+  } */
+
+  .client-lesson__video iframe {
     width: 730px; 
     height: 422px;
   }
@@ -4766,7 +4776,12 @@ section.subheader_pkp.subheader--min .menu-login .not-logged-in a.menu-login__lo
     margin-bottom: 35px;
   }
 
-  .client-lesson__video video {
+  /* .client-lesson__video video {
+    width: 350px; 
+    height: 203px;
+  } */
+
+  .client-lesson__video iframe {
     width: 350px; 
     height: 203px;
   }
